@@ -1,0 +1,13 @@
+// alert("welcome");
+// console.log("welcome");
+// console.log(12345);
+// console.table({fname:"hi",age:4})
+// console.error({fname:"hi",age:4})
+// console.warn({fname:"hi",age:4})
+// console.clear()
+// console.time("Timer")
+// for(i=0;i<10;i++)
+// {
+//     console.log(i)
+// }
+// console.timeEnd("Timer")

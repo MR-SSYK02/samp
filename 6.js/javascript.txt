@@ -1,0 +1,1713 @@
+__________
+JAVASCRIPT|node.js
+__________|
+>>Its an world most famous programing language.
+>>its easy to learn.
+>>js is use to create a intractive and dynamic webpage.
+>>Its use to add a functions on your web page.
+>>allow to use intraction with web content.
+>>Js can use to implement a complex functions like animations, games, and user feedback.
+>>JavaScript is dynamically typed, meaning the type of a variable is determined at runtime rather than at compile time.
+>> JavaScript was used mainly for client-side (browser).
+................................................................................................................................
+>>VARIABLES
+>>DATATYPES
+>>OPERATORS
+print staement is console.log()
+save as .js
+.................................................................................................................................
+variables
+----------
+//is defiend as container of storing values
+are like= numbers, strings, objects, etc.
+
+example program
+
+var a=10
+var b=20
+console.log(a+b)
+console.log("hi")
+__________________________________________________________________________________________________________________________________
+there are three variables
+>> var
+>> let
+>> const
+____________________________________
+var a=20		\\globle scope
+let a=20		\\local scope
+const a=20		\\its an constant variable
+console.log(a)		
+___________________________________
+{
+let a=1
+}
+console.log(a)
+__________________________________
+{
+var a=1
+}
+console.log(a)
+___________________________________
+sample
+
+var price = 100
+var name = "iphone"
+var tax = 30
+
+console.log(name)
+var total=price+tax
+console.log(total)
+__________________________________________
+key words
+---------
+its mean pre defined codes
+var,const,if,etc
+there not able to use variable names
+________________________________________________
+comments
+--------
+in the comments are used to explain the code
+and make readable	//defined about code
+single line
+multiline
+_________________________________________________
+JS OPERATORS
+------------
+ Arithmetic Operators=+,-,*,/
+ Assignment Operators= =,-=,+=,*=,/=
+ Comparison Operators( relation operator)= ==, !=,> ,<,<=,>=
+ Logical Operators &,~,!
+ ?! ternory operator
+ bitwise operator
+ nullish  operator (??)
+ increment & decrement operator
+____________________________________________________
+increment & decrement operator
+------------------------------
+var a=10
+a++
+___________________________________________________________
+var a=10
+b=a++			//++a pre increment
+b==a--
+console.log(b)		//a
+__________________________________
+type of convertion
+-----------------
+to string
+----------
+a=25;
+console.log(a,typeof a)
+a=String(a)
+console.log(a,typeof a)
+___________________________
+num
+----
+var a="25";
+console.log(a,typeof a)
+a=Number(a)  //parseInt///parsefloat
+
+???object and letters not converted
+console.log(a,typeof a)
+-----------------------------
+operator
+--------
+var a=10
+a+=5
+console.log(a)
+___________________________
+relation operator
+=================
+var a=10
+
+console.log(a)
+var b='10'
+console.log(a==b)
+console.log(a===b)
+_________________________
+?! ternory operator
+===================
+Shortcut for if-else statements.
+const age=15
+const result=age>=18?"eligible":"not eligible"
+console.log(result)
+________________________________________________
+bitwise operator
+-----------------
+&,|,~,^,<<,>>,>>>		//know as decimel numbers
+------------------
+const a=2
+const b=3			0010
+console.log(a&b);		0011
+				0010
+__________________
+const a=2
+const b=3
+console.log(a|b);		any one true
+_______________________________________________
+const a=2
+console.log(~a);
+tilled	//-a-1
+____________________________
+xor
+opposite of and
+a=2
+b=3
+console.log(a^b)
+_______________________________
+>>
+a=5
+b=2
+console.log(a<<b)//move forward
+_________________________________________
+a=5
+b=2
+console.log(a>>b)
+____________________________________
+
+nullish coalescing operator (??)
+---------------------------------
+const user={ "name":"abc"}
+console.log(user.name)
+user.c??='salem'
+console.log(user.c)
+__________________________________________________________________
+DATA TYPE
+---------
+console.log(typeof(2))	//code(number ,string,boolean,null)
+ 
+>>primitive datatype(number,string,boolean,null,undefined)
+>>non primitive datatype(object,array)
+not want to declare
+
+>>primitive
+//null
+var a=null		able to defined
+console.log(a)
+//undefined
+var a
+console.log(a)
+//boolean
+var a=true
+console.log(typeof(a))
+
+
+__________________________________________________________________________
+_______________________________________________________
+if else statement
+syntax 
+------
+
+if(condition)
+{
+statement
+}
+else{
+statement
+}
+___________
+var rain=true
+if(rain)
+{
+	console.log("take umberlla")
+}
+else{
+	console.log("enjoy"}
+}
+___________________________________________
+console.log(false && true)
+console.log(true || false)
+console.log(!true)
+___________________________________________
+var color = "yellow"
+nested if
+
+if (color == "red")
+{
+    console.log("stop")
+
+}
+ if (color== "yellow")
+    {
+        console.log("ready")
+    }else
+{
+    console.log("go")
+}
+__________________________________________________
+else if
+var score=50
+if(score<50)
+{
+    console.log("you need to improve")
+}
+else if(score>=50 && score<70)
+{
+    console.log("well")
+}
+else{
+    console.log("great")
+
+}
+_______________________________
+nested if
+var eng=85,tam=52,math=95
+var total,avg
+total=eng+tam+math
+avg=total/3
+console.log("Total    :"+total)
+console.log("average  :"+avg)
+
+if(eng>=35 && tam>=35 && math>=35)
+{
+    console.log("pass")
+
+    if(avg>90 && avg<=100){
+    console.log("grade  :A")
+    }
+    else if(avg>80&& avg<=90){
+    console.log("grade  :B")
+    }
+    else if(avg>60&& avg<=80){
+    console.log("grade  :C")
+    }
+    else{
+        console.log("grade  :D")   
+    }
+}
+else{
+    console.log("your fail")
+}
+__________________________
+var letter = "a"
+if(letter=="a" ||letter=="e" || letter=="i" ||letter=="o" || letter=="u")
+{
+    console.log("its an vowel")
+}
+else{
+    console.log("abstract")
+}
+\\prompt("Enter your value")\\get input by user
+________________________________________________
+switch
+----------
+syntax
+--------
+switch (expression) {
+  case value1:
+    // Code to execute if expression === value1
+    break;
+
+  case value2:
+    // Code to execute if expression === value2
+    break;
+
+  // Add more cases as needed
+  default:
+    // Code to execute if no case matches
+}
+------------------------------------------------------
+var a = prompt("Enter the value: ")
+switch (a) {
+  case 1:
+    console.log("one")
+    break
+  case 2:
+    console.log("two")
+    break
+  case 3:
+    console.log("three")
+    break
+  case 4:
+    console.log("four")
+    break
+  case 5:
+    console.log("five")
+    break
+  case 6:
+    console.log("six")
+    break
+  default:
+    console.log("invalid")
+    break
+}
+____________________________________________________________
+combin switch
+------------
+combin cases
+-----------
+// Prompt user for a character
+var char = prompt("Enter a letter: ")
+
+switch (char) {
+  case "a":
+  case "e":
+  case "i":
+  case "o":
+  case "u":
+    console.log(char+' is a vowel.')
+    break;
+  default:
+    console.log(char+' is not a vowel.')
+}
+
+_________________________________
+loop
+----
+>> loop is a control structure that allows you to repeat
+ a block of code a specified number of times.
+types
+-----
+while loop
+do while loop	//exist check
+for loop
+for each loop
+_____________
+inicialization,condition,action
+______________________
+while loop
+-----------
+let count = 0;
+
+while (count < 5) {
+    console.log("Count is: " + count);
+    count++; // Increment count
+}
+_____________________________
+do while
+--------
+its an exit cheack
+---
+syntax
+--------
+do {
+  // Code to execute
+} while (condition);
+-------------------------
+var a=0
+
+do{
+  console.log(a) 
+    a++
+}
+while(a < 10)
+_________________________________
+for loop
+--------
+syntax
+------
+for (initialization; condition; increment) {
+}
+\\start\\true false\\ inc dec
+_____
+for(a=1;a<=6;a=a+1)		\\for(a=1;a<=6;a++)
+{
+    console.log("hi")            \\()
+}
+_______________________________________________________
+nested for loop
+---------------
+var num=[]
+for(var i=0;i<3;i++)
+{
+    num.push([])
+    for(var j=0;j<3;j++)
+    {
+        num[i].push(j);
+    }
+}
+console.log(num)
+console.table(num)
+_______________________________________________________________
+for of loop
+------------
+syntax
+-------
+for (const element of iterable) {
+  // Code to execute for each element
+}
+---------------------------------------
+element is the variable that represents each value in the iterable.
+iterable is any object that implements the iterable protocol (arrays, strings, etc.).
+-------------------------------------------------------------------------------------
+var numbers =[1,2,3,4,5]
+for(const num of numbers)
+{
+    console.log(num)
+}
+//normal string array use this
+____________________________
+for in loop
+-----------
+ properties of an object or elements of an array
+syntax
+-------
+for (let key in object) {
+  // Code to execute for each property or index
+}
+-------------------------------------------------------
+var val = {
+  name: "John",
+  age: 30,
+  city: "New York"
+}
+for(let values in val)
+{
+    console.log(values +" : "+val[values])
+}
+_____________________________________________________________________
+Break in js
+_____________
+ break statement is used to exit a loop or switch statement prematurely. 
+in for loop
+----------
+for(let i=0;i<=10;i++)
+{
+    console.log(i)
+    if(i==4){
+        break;
+    }
+}
+________________________________________
+in switch 
+---------
+const fruit = 'apple';
+
+switch (fruit) {
+  case 'apple':
+    console.log('Apple selected');
+    break;
+  case 'banana':
+    console.log('Banana selected');
+    break;
+  default:
+    console.log('No fruit selected');
+}
+_______________________________________________
+continue statement in js
+--------------------------
+continue statement in JavaScript is used to skip the current iteration of a loop and proceed with the next iteration.
+--------------
+for (let i = 0; i < 10; i++) {
+  if (i % 2 === 0) {
+    continue; // Skip even numbers
+  }
+  console.log(i);
+}
+
+______________________________________________
+label block
+---------------
+ label blocks allow you to assign a label to a block of code or a loop.
+ Labels are used in conjunction with statements like break or continue to control the flow of nested loops or code blocks explicitly.
+syntax
+-------
+labelName: {
+  // Code block
+}
+_____________________________
+outerBlock: {
+  console.log("Inside the block");
+  break outerBlock; // Exit the block
+  console.log("This will not execute");
+}
+console.log("Outside the block");
+// Output:
+// Inside the block
+// Outside the block
+// just for known
+_________________________________________________
+FUNCTIONS
+---------
+functions are reusable blocks of code that perform a specific task.
+block of codes are designed to perform a particular task.
+its execute when somthing on call its.
+--------------------------------------------------------------
+
+//example phone no.
+
+example program
+
+function abc()	
+{		function nameo()//in vs code node demo.js
+
+console.log("hello")		\\definetion
+}
+abc()
+
+2
+function iphone(){	
+
+console.log("he")
+}
+function samsung(){	
+
+    console.log("hel")
+    }
+    function apple(){	
+
+        console.log("hello")
+        }
+        iphone()
+
+3
+var a=10
+var b=80
+function add(){
+console.log(a+b)
+}
+add()
+
+4
+var fa="yuva"
+var fp="me"
+var fm="avenger"
+
+console.log("fa:"+fa)		\\+to add values
+5
+
+var fa="yuva"
+var fp="me"
+var fm="avenger"
+function fav(){
+console.log("fa:"+fa)
+console.log("fp:"+fp)
+console.log("fm:"+fm)
+}
+fav()
+
+___________________________________________________________________________
+function parameters
+-------------------
+give definetion on inner function
+function add(a,b)
+{
+    console.log(a+b)
+
+}
+add(20,30)
+
+
+2
+
+function area(l,b)
+{
+    // var a=l*b
+    console.log("area is:"+l*b)
+
+}
+area (10,20)
+
+______________________________________________________________________
+function return
+
+function myname()
+{
+    return "me"
+}
+var a=myname()
+console.log(a)
+
+3
+
+function add(a,b)
+{
+   return a+b
+
+}
+var total=add(20,30)
+console.log(total)
+_____________________
+math function in js
+-------------------
+JavaScript provides a built-in Math object with a variety of functions and properties to perform mathematical operations.
+ You don't need to instantiate it; 
+you can use its methods and properties directly.
+________________________________________
+basic operators
+----------------
+Math.abs(x);    // Returns the absolute value of x
+Math.ceil(x);   // Rounds x up to the nearest integer
+Math.floor(x);  // Rounds x down to the nearest integer
+Math.round(x);  // Rounds x to the nearest integer
+Math.trunc(x);  // Removes the fractional part of x
+__________________________________________________________
+console.log(Math.abs(-5));     // 5
+console.log(Math.ceil(4.2));   // 5
+console.log(Math.floor(4.7));  // 4
+console.log(Math.round(4.5));  // 5
+console.log(Math.trunc(4.9));  // 4
+______________________________________________________________
+power and root
+--------------
+Math.pow(base, exponent); // Returns base raised to the power of exponent
+Math.sqrt(x);             // Returns the square root of x
+Math.cbrt(x);             // Returns the cube root of x
+______________________________________________________________________
+console.log(Math.pow(2, 3));   // 8
+console.log(Math.sqrt(16));    // 4
+console.log(Math.cbrt(27));    // 3
+____________________________________________________________
+constant
+--------
+console.log(Math.PI);  // 3.141592653589793
+console.log(Math.E);   // 2.718281828459045
+_______________________________________________________________
+string functions
+----------------
+it can able to change them
+-----
+let str = "Hello, World!";
+console.log(str.length); // 13
+console.log(str[0]);         // J
+console.log(str.charAt(4));  // S
+console.log(str.toUpperCase()); // HELLO
+console.log(str.toLowerCase()); // hello
+_______________________________________________________
+let str = "JavaScript is awesome";
+console.log(str.indexOf("Script"));  // 4
+console.log(str.lastIndexOf("a"));   // 3
+console.log(str.includes("is"));     // true
+console.log(str.startsWith("Java")); // true
+console.log(str.endsWith("some"));   // true
+_______________________________________________________
+extract function
+-----------------
+let str = "JavaScript";
+console.log(str.slice(0, 4));       // Java
+console.log(str.substring(4, 10));  // Script
+console.log(str.substr(4, 6));      // Script
+_____________________________________________________
+let a="hello,how,are,you"
+c=a.split(',')
+console.log(c)
+console.log(c.join("_"))
+________________________________________________________
+let str = " Hello, World! ";
+console.log(str.replace("World", "JavaScript")); // Hello, JavaScript!
+console.log(str.trim());                        // Hello, World!
+console.log("abc".repeat(3));                   // abcabcabc
+_______________________________________________________________________
+arbitary function
+------------------
+, arbitrary functions typically refer to functions that can accept a variable number of arguments.
+ These are useful when you don't know in advance how many arguments the function will need to handle.
+key word is argument
+---------------------
+function sum()
+{
+    let total=0
+    for(let i=0;i<arguments.length;i++){
+        total+=arguments[i]
+    }
+    return total
+}
+console.log(sum(12,45))
+console.log(sum(12,45,34,45))
+___________________________________________________
+spert operator
+---------------
+with arbitary
+function sum(...tot)
+{
+    let total=0
+    for(let i=0;i<tot.length;i++){
+        total+=tot[i]
+    }
+    return total
+}
+console.log(sum(12,45))
+console.log(sum(12,45,34,45))
+___________________________________________________
+arrow function in ES6
+======================
+syntax
+--------
+const add = (a, b) => a + b;
+---------------------------
+const add=(a,b)=>a+b
+console.log(add(5,6))
+---------------------------------------
+var num=[1,2,3,4,5]
+console.log(num)
+var double=num.map(a=>a*2)
+console.log(double)
+_________________________________________
+var letter=["apple","banana","orange","mango"]
+console.log(letter)
+var double=letter.filter(a=>a.length>5)
+console.log(double)
+___________________________________________________
+var num=[1,2,3,4,5]
+console.log(num)
+var total=num.reduce((sum,num)=>sum+num,0)
+console.log(total)
+_______________________________________________________
+callback function
+-----------------
+ callback function is a function passed as an argument to another function.
+ It is called (or executed) inside the outer function to complete some action. 
+Callbacks are a fundamental part of asynchronous programming in JavaScript, 
+but they are also commonly used in synchronous functions.
+================================================================
+base
+----
+function fun()
+{
+console.log("hello")
+}
+function test(fun2)		//higher order function
+{
+fun2()
+}
+test(fun)
+_____________________________________________________________
+setTimeout(function,time)
+--------------------------
+setTimeout(function(){
+    console.log("hello")		//timing of print
+},3000)
+=====================================================
+setInterval
+------------
+add every ginen time
+----------------------
+setInterval(function(){
+    console.log("hello")		//timing of print
+},3000)
+______________________________________________________________
+scope
+---------
+
+>>block scope
+>>function scope
+______________________
+block scope
+-----------
+if(true)
+{
+    let block="block scope"
+    console.log(block)
+}		// its only use in block
+___________________________________________
+funtion scope
+------------------
+function myfun()
+{
+    var fun ="hi"
+    console.log(fun)
+}
+myfun()		//use var
+_____________________________________
+array
+------
+if normally store one value in variable
+so we use array to store multiple values
+a[]	//describe
+__________________________________________
+var s=[1,2,3,4]
+console.log(s)
+console.table to find index value
+console.log(a[2])
+____________________________________
+var s=[1,2,3,4]
+console.log(s)
+var t=new Array(7,8,9,4,5)
+console.log(t)
+____________________
+var s=[1,2,3,4]
+console.log(s)
+var t=new Array(7,8,9,4,5)
+console.log(t)
+var t=new Array("abc",23,45.6)
+console.log(t)
+__________________
+methods
+---------
+have some types 
+----------------
+there can be described below
+________________________________
+for each
+--------
+var num=[1,2,3,4,6,68,8,5,45,55,6,85,5]
+//value,index,array
+num.forEach((value)=>{
+    console.log(value)
+})
+============================================
+map()
+----
+its similiar to for each its can able to change in particular element
+--------------------------
+var a=[1,2,3,54,6,41,45,584,51,45,85641,85,415,54]
+//value,index,array
+var sqrt=a.map((value)=>{			.touppercase 
+    return Math.sqrt(value)//.toFixed()
+})
+console.table(sqrt)
+-----------------------------------
+filter()
+-------
+//filter the values
+--------------------
+var num=[1,2,3,4,5,6,7,8]
+var even=num.filter(num=>num%2==0)
+console.log(even)
+______________________________________
+reduce()
+--------
+its mean also reduce
+--------------------
+ syntax
+_________
+array.reduce(function(accumlator,current value,index,array))
+{}			//last value,value
+,initial value);
+______________________________________
+var num=[1,2,3,4,5,6,7,8]
+var sum = num.reduce((accum,curentvalue)=>accum+curentvalue)
+console.log(sum)
+_____________________________________________________________
+slice
+------
+get a particular potion and save in new element
+-----------------------------------------
+start ,end
+--------------
+if we didn't give any state its 
+print same statement in new array
+var num=[1,2,3,4,5,6,7,8,9,10]
+//slice(start,end)
+console.log(num)
+console.log("slice :"+num.slice())
+console.log("slice :"+num.slice(2,5))
+console.log("slice :"+num.slice(2))
+_____________________________________________________________
+splice
+--------
+if you want to remove any element use splice
+its directly change the main array.
+
+// remove=splice(start,length,new element)
+
+its an return type
+it also add an new element
+
+
+var num=[1,2,3,4,5,6,7,8,9,10]
+console.log(num)
+let remove=num.splice(4)
+console.log(remove)
+console.log(num)
+_____________________________________________
+
+var num=[1,2,3,4,5,6,7,8,9,10]
+console.log(num)
+let remove=num.splice(4,3)
+console.log(remove)
+console.log(num)
+__________________________________________
+var num=[1,2,3,4,5,6,7,8,9,10]
+console.log(num)
+let remove=num.splice(4,3,8.5)
+let remove=num.splice(4,0,8.5)
+console.log(remove)
+console.log(num)
+_______________________________________________
+concat
+--------
+ concat() is a method used to join two or more arrays or strings. It creates and returns 
+ a new array or string without modifying the original.
+___________________
+
+var a=[1,2,3,4]
+var b=[3,2,5,5]
+var c=[9,54,5,8]
+var d=a.concat(b);
+console.log(d)
+_______________________________________________
+sort
+-----
+var name=["ram","sam","dev"]
+console.log(name)
+name.sort()
+console.log(name)
+___________________________________
+var name=[54,21,23,95,100,845,5,5842]
+console.log(name)
+name.sort((a,b)=>{
+    return a-b
+})
+console.log(name)
+___________________________________________
+fill
+-----
+value,starting,ending
+=====================
+var a=[1,2,3,4,5,6]
+console.log(a)
+a.fill(20,3)
+console.log(a)
+a.fill(20,1,3)
+console.log(a)
+a.fill(20)
+console.log(a)
+_______________________________
+includes
+-----------
+its use to find a element
+--------------------------
+gives true or false
+--------------
+value,start_index
+---------------
+var a=["pen","pencil","eraser","box"]
+var res=a.includes("pen")
+console.log(res)
+var res=a.includes("hi")
+console.log(res)
+var res=a.includes("pen",2)
+__________________________________________
+join
+----
+its use to array to convert string
+--------------------------------------
+var a=["pen","pencil","eraser","box"]
+console.log(a)
+console.log(a.join())
+console.log(a.join("|"))
+__________________________________________
+reverse()
+---------
+var a=[1,2,3,4,5,6,7]
+console.log(a)
+a.reverse()
+console.log(a)
+____________________________________________
+push
+-----
+its also use to add a data
+its add in last
+--------------------------
+var a=[1,2,3,4,5]
+console.log(a)
+console.log(a.push(8))
+console.log(a)
+___________________________
+pop
+---
+its use to delete or exits or remove
+just in last element
+-----------------------------
+var a=[1,2,3,4,5]
+console.log(a)
+console.log(a.pop())
+console.log(a)
+____________________________
+shift
+------
+use to remove in first element
+-----------------
+var a=[1,2,3,4,5]
+console.log(a)
+console.log(a.shift())
+console.log(a)
+var b=a.shift()
+console.log(b)
+_______________________________________
+unshift
+________
+its use to adding elements in starting
+---------------------------------------
+var a=[1,2,3,4,5]
+console.log(a)
+console.log(a.unshift(9))
+console.log(a)
+----------------------------------------------
+indexof
+---------
+i wnat to find the correct indedx value 
+so we use this function
+________________________________________________
+var a=[1,2,3,4,5]
+console.log(a)
+console.log(a.indexOf(3))
+_________________________________________________
+last indexof
+------------
+its similar to index of but its search in last state
+__________________________
+var a=[1,2,3,4,5,3,5]
+console.log(a)
+console.log(a.lastIndexOf(3))
+_____________________________________
+Every and some
+--------------
+its select an all elements in every
+___________________________________
+var a=[10,25,37,44,56,39,42]
+var b=a.every((value)=>{
+    return value%2==0			&&
+})
+console.log(a)
+console.log(b)
+__________________________________
+var a=[10,25,37,44,56,39,42]
+var b=a.some((value)=>{
+    return value%2==0			||
+})
+console.log(a)
+console.log(b)
+its get any one is true its all are true
+-----------------------------------------------
+array is refernce type
+________________________
+object
+__________
+const student={
+    fullname:"abc",
+    father:"def",
+    age:32,
+    city:"pondy"
+}
+console.log(student)
+___________________________________
+function addstd(fullname,father,age,city)
+{
+    var user ={}
+    user.fullname=fullname
+    user.father=father
+    user.age=age
+    user.city=city
+    return user
+}
+console.log(addstd("sara","ser",23,"pondy"))
+_______________________________________________
+const student={
+    fullname:"abc",
+    father:"def",
+    age:32,
+    city:"pondy"
+}
+console.log(student.age)
+console.log(student['age'])
+_____________________________________________
+optional chaining
+------------------
+var user={
+    name:"abc",
+    add:{
+        city:"salem"
+    }
+}
+console.log(user)
+console.log(user.add)
+console.log(user.add.city)
+_________________________________________________
+in real time save the datas in database and get the data 
+if they didn't give the value it gets error so we use this method
+-----------------------------------
+conditional
+-------------
+var user={
+    name:"abc",
+    add:{
+        city:"salem"
+    }
+}
+
+console.log(user.add?user.
+add.city:undefined)
+//2 console.log(user.add && user.add.city)
+________________________________
+optional chaning
+?.
+var user={
+    name:"abc",
+    add:{
+        city:"salem"
+    }
+}
+
+console.log(user.add ?.city)
+_____________
+var user={
+    name:"abc",
+    add:{
+        city:"salem"
+    }
+}
+
+console.log(user.add ?.city)
+var key='city'
+console.log(user.add?.[key])
+____________________________________
+function inside object
+----------------------
+var user={
+    name:"abc",
+    age:25
+}
+console.log(user)
+its an normal
+_______________________
+ using function or methods
+--------------------------
+var user={
+    name:"abc",
+    age:25,
+    method: function() {
+        console.log("hello")
+    }
+}
+console.log(user)
+console.log(user.method)
+user.method()
+_______________________________________
+    method() {
+        console.log("hello")
+    }//use key to functions
+___________________________________________
+   method:()=>{
+        console.log("hello")
+    }//arrow function method
+___________________________________________
+var age=25
+function info()
+{
+    console.log(age) 
+    console.log(this) 
+}
+info()
+___________________________________________
+destructuring assignment
+-----------------------
+its known as spliting the elements in array
+----
+
+array destructuring
+---------------------
+var num=[1,2,3,4,5]
+var first=num[0]
+var rest=num.slice(1)
+console.log(first)
+console.log(rest)
+_____________________________
+in es6
+------
+.../spered operator
+var num=[1,2,3,4,5]
+var[first,second,...rest]=num
+console.log(first)
+console.log(second)
+console.log(rest)
+___________________________
+
+object
+------
+var user={
+    name:"abc",
+    age:25,
+    gender:'male'
+}
+var name= user.name
+var age= user.age
+var gender= user.gender
+console.log(name)
+console.log(age)
+console.log(gender)
+________________________
+es6
+----
+var user={
+    name:"abc",
+    age:25,
+    gender:'male'
+}
+var { name,age,gender }=user
+console.log(name)
+console.log(age)
+console.log(gender)
+__________________________________
+destructuring in js
+----------------------
+its convert multiple arrays in single array
+---------------------------
+var num=[1,2,3,4,5,6]
+// var a=num[0]
+// var b=num[1]
+// var c=num[2]
+// var d=num[3]
+var[a,b,c]=num;
+console.log(a)
+console.log(b)
+console.log(c)
+______________
+var[a,b,c, ,d]=num;
+console.log(a)
+console.log(b)
+console.log(c)
+console.log(d)
+_______________
+var num=[1,2,3,4,5,6]
+var[a,b,...c]=num;
+console.log(a)
+console.log(b)
+console.log(c)
+______________________
+object
+```````
+var user={
+    name:"abc",
+    age:25,
+    gender:'male'
+}
+var{name,age,gender}=user;
+console.log(name)
+console.log(age)
+console.log(gender)
+________________________________
+create object
+-------------
+there have an four types are
+>>object literals
+>>object constructor
+>>object.create()
+>>using class
+--------------------------
+object literal
+_________________
+var user={
+    name:"abc",
+    age:25,
+    gender:'male'
+}
+console.log(user)
+________________________
+object constructor
+------------------
+var user=new Object()
+    user.name="abc",
+    user.age=25,
+    user.gender='male'
+console.log(user)
+________________________________
+object.create()
+----------------
+use two parameters are
+prototype,properties   //optional
+prototype, its must also know method
+
+var person1={
+    say:function(){
+        console.log("hello")
+    }
+}
+var person=Object.create(person1)
+ person.name="abc",
+   person.age=25,
+    person.gender='male'
+    console.log(person)
+    person.say()
+_______________________________________
+using class
+------------
+class per
+{
+    constructor(name,age,job)
+    {
+        this.name=name
+        this.age=age
+        this.job=job
+    }
+}
+var person = new per("abc",21,"web")
+console.log(person)
+console.log(per)
+_______________________________________
+call apply and bind methods
+-----------------------------
+function fun()
+{
+    console.log(this)
+}
+console.log(fun.name)
+console.log(fun.toString())
+fun()
+fun.call()
+______________________________
+
+var user_name = "abc";
+
+function fun() {
+    console.log("welcome : " +user_name);
+}
+
+fun();
+
+_____________________________________________
+call
+-----
+
+function fun() {
+    console.log("welcome : " + this.user_name)
+}
+var fun1={user_name : "abc"}
+fun.call(fun1)
+
+_____________________________________________________
+function fun(m1,m2) {
+    console.log("welcome : " + this.user_name+ " got "+(m1+m2)+" marks ")
+}
+var fun1={user_name : "abc"}
+fun(35,35)
+fun.call(fun1,35,35)
+_____________________________________________________________________
+apply
+-----
+apply and call are same but 
+but with a key difference: it allows you to pass arguments as an array 
+(or array-like object) instead of individually.
+---------------------------------------------------------
+function fun(m1,m2) {
+    console.log("welcome : " + this.user_name+ " got "+(m1+m2)+" marks ")
+}
+var fun1={user_name : "abc"}
+fun(35,35)
+fun.call(fun1,35,35)
+let sub=[25,35]
+fun.apply(fun1,sub)
+----------------------------------------------------------------
+bind
+----
+ bind() method creates a new function with a specific this value and optionally preset arguments.
+  it returns a new function that can be called later.
+___________________
+function fun(m1,m2) {
+    console.log("welcome : " + this.user_name+ " got "+(m1+m2)+" marks ")
+}
+var fun1={user_name : "abc"}
+fun(35,35)
+fun.call(fun1,35,35)
+let sub=[25,35]
+fun.apply(fun1,sub)
+var fun2=fun.bind(fun1,50,98)
+fun2()
+___________________________________________________________________
+class
+----------
+class pers{
+    constructor(name){
+        this.name = name
+    }
+    say(){
+        console.log("Hello "+this.name)
+    }
+}
+var person = new pers("ABC")
+person.say()
+__________________________________________
+inhertance
+----------
+allows one class to derive (inherit)
+properties and methods from another class.
+this is achieved using the extends keyword.
+Parent Class (Base Class): The class that provides methods and properties to be inherited.
+Child Class (Derived Class): The class that inherits from the parent class.
+________________________
+class pers{
+    constructor(name){
+        this.name = name
+    }
+    say(){
+        console.log("Hello "+this.name)
+    }
+}
+class pers1 extends pers{
+    say(){
+        console.log(this.name+" hi")
+    } 
+}
+var person = new pers1("ABC")
+person.say()
+_________________________________________
+Getter and setter
+-----------------
+use in two ways object and class
+----------------------
+object
+------
+get: Defines a getter method, which acts like a property but performs a function when accessed.
+set: Defines a setter method, which acts like a property but performs a function when a value is assigned.
+_____________________
+const person = {
+    firstName: "John",
+    lastName: "Doe",
+    get fullName() {
+        return this.firstName + this.lastName;
+    },
+    set fullName(name) {
+        const [first, last] = name.split(" ")
+        this.firstName = first
+        this.lastName = last
+    }
+}
+console.log(person.fullName)
+person.fullName = "Alice Smith"
+console.log(person.firstName)  
+console.log(person.lastName) 
+console.log(person.fullName)
+_____________________________________
+using class
+------------
+class Person{
+    constructor(firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+    get fullName() {
+        return this.firstName + this.lastName;
+    }
+    set fullName(name) {
+        const [first, last] = name.split(" ")
+        this.firstName = first
+        this.lastName = last
+    }
+}
+const person = new Person("John", "Doe");
+console.log(person.fullName)
+person.fullName = "Alice Smith"
+console.log(person.firstName)  
+console.log(person.lastName) 
+console.log(person.fullName)
+____________________________________________________________
+static
+-------
+ static methods and properties are attached to the class itself, 
+
+Static methods and properties are defined using the static keyword.
+once you give a  static you not want to create a object
+call using static method or class name
+static property
+--------------
+class name.method
+------------------------
+syntax
+--------
+class ClassName {
+    static staticMethod() {
+        // Code for the static method
+    }
+
+    static staticProperty = "Some static value";
+}
+
+_________________________________________________
+class my{
+    static mystaticproperty = "HI"
+    static mystatic()
+    {
+        console.log("HELLO")
+    }
+}
+my.mystatic()
+console.log(my.mystaticproperty)
+________________________________________________________
+Error handling
+--------------
+let a= undefined
+try{
+    console.log(a.name)
+}
+catch(error)
+{
+    console.log("error occured")
+}
+____________________________________________________
+ 
+dom manipulation  (Document Object Model)
+----------------
+Manipulation in JavaScript allows you to interact with and modify the structure, style, and content of a webpage.
+ The DOM represents the HTML document as a tree structure, where each element, attribute, and piece of text is a node in the tree. 
+
+Document: The entire web page.
+Node: A single point in the DOM tree. Each element, text, and attribute is a node.
+Element: An HTML element (like <div>, <h1>, <p>, etc.).
+Attributes: The properties of elements (like id, class, src, href, etc.).
+Text: The text content inside elements.
+____________________________________
+
+ getElementById(),
+ getElementsByClassName(),
+ querySelector(), 
+ querySelectorAll().
+____________________________________________
+Manipulating DOM Elements
+-------------------------
+Changing Content
+--------------
+textContent:
+innerHTML:
+Changing Styles
+---------------
+ element using classList.
+add():
+remove():
+toggle():
+Creating, Appending, and Removing Elements
+-----------------------------------------------
+dom
+----
+by id
+------
+let element = document.getElementById('head');
+element.textContent="youtube"///+=
+console.log(element.textContent);
+---------------------------------
+let element = document.getElementById('div');
+element.textContent="youtube"
+console.log(element.textContent);
+__________________________________________
+let element = document.getElementById('div');
+element.innerHTML='<p>hi</p>';
+console.log(element.textContent);
+create an tag
+____________________________________________
+able to create an class name
+---------------------------
+let element = document.getElementById('div');
+element.className="class name"
+element.innerHTML='<p>hi</p>';
+console.log(element.textContent);
+_______________________________________
+we can able to access a styles
+------------------------------
+let element = document.getElementById('div')
+element.className="class name"
+element.innerHTML='<p>hi</p>'
+element.style.color='red'
+console.log(element.textContent)
+it have many things styles etc.....
+_____________________________________________
+tag name
+--------
+let element = document.getElementsByTagName('h1')
+console.log(element[0])
+_____________________________
+same as class name
+-----------------------
+let element = document.getElementsByClassName('h1')
+console.log(element[0])
+__________________________________________________
+let element = document.querySelector('h1')
+console.log(element)
+like an id select first occurance
+
+_____________________________________________
+let element = document.querySelector('h1');
+let para = document.createElement('p');
+para.textContent ="hello";
+console.log(para);
+create dynamic tags
+______________________________________
+append prepend
+____________________
+element.append(para)
+________________
+element.prepend(para)
+
+__________________________
+event listener
+----------------
+events
+__________
+click event
+-----------
+ let btn = document.getElementById('bun');
+    btn.addEventListener('click',(event)=>{
+        btn.textContent = "on click";
+        console.log("clicked")
+    })
+___________________________________________
+hower
+------
+  let btn = document.getElementById('bun');
+    btn.addEventListener('click',(event)=>{
+        btn.textContent = "on click";
+        console.log("clicked");
+    });
+    btn.addEventListener('mouseover',(event)=>{
+        btn.textContent = "on click over";
+        console.log("clicked over");
+    });
+____________________________________________________
+    let btn = document.getElementById('bun');
+    btn.addEventListener('click',(event)=>{
+        btn.textContent = "on click";
+        console.log("clicked");
+    });
+    btn.addEventListener('mouseover',(event)=>{
+        btn.textContent = "on click over";
+        console.log("clicked over");
+    });
+    btn.addEventListener('mouseout',(event)=>{
+        btn.textContent = "click";
+        console.log("clicked over");
+    });
+________________________________________________________
+keyboard events
+-------------------
+ let btn = document.getElementById('bun');
+
+    document.addEventListener('keydown',(event)=>{
+        console.log(event.key);
+    });
+|_____________________________________
+ let btn = document.getElementById('bun');
+
+    document.addEventListener('keydown',(event)=>{
+        console.log(event.key);
+        switch(event.key){
+            case 'ArrowUp':
+                btn.textContent=Number(btn.textContent)+1;
+                break;
+            case 'ArrowDown':
+                btn.textContent=Number(btn.textContent)-1;
+                break;
+
+        }
+    });
+______________________________________________________________
+
+
+
+
+
+FUNCTIONS()
+alert("");
+shift alrt down
+console.log("welcome");
+console.log(12345);
+console.table({fname:"hi",age:4})
+console.error({fname:"hi",age:4})
+console.warn({fname:"hi",age:4})
+console.clear()
+console.time("Timer")
+for(i=0;i<10;i++)
+{
+    console.log(i)
+}
+console.timeEnd("Timer")
+_______________________________________________
+
+
+
+lorem
+
+
+
+
+
+
+

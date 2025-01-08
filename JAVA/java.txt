@@ -1,0 +1,582 @@
+____
+Java|
+____|
+
+Java is a popular programming language.
+
+Java is used to develop mobile apps, web apps, desktop apps, games and much more.
+
+Java is a popular programming language, created in 1995.
+
+It is owned by Oracle, and more than 3 billion devices run Java.
+
+It is used for:
+
+Mobile applications (specially Android apps)
+Desktop applications
+Web applications
+Web servers and application servers
+Games
+Database connection
+And much, much more!
+Java works on different platforms (Windows, Mac , Linux , Raspberry Pi, etc.)
+It is one of the most popular programming languages in the world
+It has a large demand in the current job market
+It is easy to learn and simple to use
+It is open-source and free
+It is secure, fast and powerful
+It has huge community support (tens of millions of developers)
+Java is an object oriented language which gives a clear structure to programs and allows code to be reused, lowering development costs
+As Java is close to C++ and C#, it makes it easy for programmers to switch to Java or vice versa
+_____________________________________________________________________________________________________________________________________________________
+How to install java
+_____________________
+
+java jdk download
+____________________
+go to direct site of oracal
+---
+afer installed 
+go there path and put an edit environment
+____________________________________________
+after that able to run that
+-----
+open cmd and check java
+javac 
+and ther versions
+______________________
+
+notepad ++ install
+-----
+another one idea
+intellij IDEA
+_________________________
+lets start
+___________
+
+
+
+first
+______
+samples
+--------
+save like.java
+_______________
+
+headers are packages
+______________________
+import java.lang.*;
+optional its already in build in java compilers
+_________________________________________________
+we want to write the codes in with in the class 
+becase of its fully oops programing language 
+
+
+
+==
+another rule the class name and file name are same 
+==
+first-
+------
+
+import java.lang.*;
+class first{
+	public static void main(String args[])
+	{
+		System.out.println("LET WE START");
+	}
+}
+___________________________________________________________
+public static void main(string args[])
+we use it for in the whole program can contain with in the class 
+so we are not able to create an object so we use it
+ 
+
+public= for the code set in public 
+static =its for our program in over static method 
+void mean there is no return type 
+main  there is no any return value its act as an server side
+String args[]  = its stored an command line arguments
+________________________________________________________________________
+printing statements
+_________________________
+System.out.println()
+Prints the text and moves the cursor to the next line.
+________________________________________________________
+ System.out.printf()
+Used for formatted output, similar to printf in C.
+___________________________________________________________
+ System.out.format()
+Similar to printf(); used for formatted output.
+______________________________________________________________
+
+>javac first.java
+>java first
+java t
+______________________________________________________________
+now able to use another name to class name but java executer can use 
+same class name as program code
+
+its generate an new class files
+_______________________________________
+command line arguments
+________________________
+its run in command line execution
+________________________________
+String args[]
+itsa an argument
+_______________________
+
+import java.lang.*;
+class command{
+	public static void main(String args[])
+	{
+	for(int i=0;i<args.length;i++)
+	{
+		System.out.println(args[i]);
+	}
+	}
+}
+_____________________________________________________________________
+>java command hello
+___________________________
+single and multi line comments in java
+___________________________________________
+//
+
+
+/*
+*/
+_________________________________
+
+variables(premitive data types)
+__________
+string for name 
+char for character
+int for integer
+float
+__________________________
+String - stores text, such as "Hello". String values are surrounded by double quotes
+int - stores integers (whole numbers), without decimals, such as 123 or -123
+float - stores floating point numbers, with decimals, such as 19.99 or -19.99
+char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
+boolean - stores values with two states: true or false
+
+
+type variableName = value;
+___________________________
+class variables{
+	public static void main(String args[])
+	{
+		String name="yuva";
+		int age=21;
+		float percent=92.7f;
+		char gender='m';
+		boolean married=false;
+		System.out.println(name);
+		System.out.println(age);
+		System.out.println(gender);
+		System.out.println(married);
+		}
+}
+___________________________________________________________
+type casting 
+_____________
+Type casting is when you assign a value of one primitive data type to another type.
+
+In Java, there are two types of casting:
+
+Widening Casting (automatically) - converting a smaller type to a larger type size
+byte -> short -> char -> int -> long -> float -> double
+
+Narrowing Casting (manually) - converting a larger type to a smaller size type
+double -> float -> long -> int -> char -> short -> byte
+
+______________________
+widening
+__________
+class tycast{
+	public static void main(String args[])
+	{
+		int a=10;
+		double b=a;
+		System.out.println("int   :"+
+		a);
+		System.out.println("double   :"+
+		b);
+		
+	}
+}
+___________________________________
+Narrowing
+__________
+class tycast{
+	public static void main(String args[])
+	{
+		int a=10;
+		double b=a,d=52.10;
+		int c=(int)d;
+		System.out.println("int   :"+
+		a);
+		System.out.println("double   :"+
+		b);
+		System.out.println("double   :"+
+		d);
+		System.out.println("int   :"+
+		c);
+		
+	}
+}
+_______________________________________________________
+Java Operators
+Operators are used to perform operations on variables and values.
+
+In the example below, we use the + operator to add together two values:
+_______________________
+Arithmetic operators
+Assignment operators
+Comparison operators
+Logical operators
+Bitwise operators
+__________________________
+Arithmetic operators
+_____________________
+class arith{
+	public static void main(String args[])
+	{
+	int a=20,b=34;
+	System.out.println("add : "+(a+b));
+	System.out.println("sub : "+(a-b));
+	System.out.println("mul : "+(a*b));
+	System.out.println("div : "+(a/b));
+	System.out.println("mod : "+(a%b));
+	
+	}
+}
+___________________________________________________________________
+ Assignment Operators
+________________________
+class assig{
+	public static void main(String args[])
+	{
+	int a=10;
+	System.out.println(a);
+	a+=10;
+	System.out.println(a);
+	a-=10;
+	System.out.println(a);
+	a*=10;
+	System.out.println(a);
+	a/=10;
+	System.out.println(a);
+	
+	}
+}
+______________________________________________________________
+ Comparison Operators/relational operator 
+_____________________________________________
+class com{
+	public static void main(String args[])
+	{
+	int a=10,b=20;
+	System.out.println(a==b);
+	System.out.println(a!=b);
+	System.out.println(a<b);
+	System.out.println(a>b);
+	System.out.println(a<=b);
+	System.out.println(a>=b);
+	}
+}
+__________________________________________________
+conditonal or ternary operator
+_______________________________
+class cond{
+	public static void main(String args[])
+	{
+	int a=10,b=20,c;
+	c=a>b?a:b;
+	
+	System.out.println("the greatest number is :"+c);
+	}
+}
+________________________________________________________________
+unary operator
+_________________
+its an increment and decriment
+_______________________________
+class unary{
+	public static void main(String args[])
+	{
+	int a=10;
+	System.out.println(a);
+	a++;
+	System.out.println(a);
+	System.out.println(a++);
+	System.out.println(a);
+	System.out.println(++a);
+	a--;
+	System.out.println(a);
+	System.out.println(a--);
+	System.out.println(a);
+	System.out.println(--a);
+	}
+}
+____________________________________________________________
+bitwise operator
+_________________
+class bit{
+	public static void main(String args[])
+	{
+	int a=10,b=12;
+	System.out.println(a&b);
+	System.out.println(a|b);
+	}
+}
+_____________________________________________________
+logical operator
+_____________________
+class bit{
+	public static void main(String args[])
+	{
+	int a=10,b=12;
+	System.out.println(a>b&&b==a);
+	System.out.println(a>b||b>a);
+	}
+}
+________________________________________________
+
+how to get input in user
+________________________
+scanner class
+_______________
+import java.util.Scanner;
+class scan{
+	public static void main(String args[])
+	{
+		Scanner in =new Scanner(System.in);
+		int a,b,c;
+		a=in.nextInt();
+		b=in.nextInt();
+		c=a+b;
+		System.out.println(c);
+	}
+}
+next line
+next
+
+_____________________________________________________
+
+if statement
+________________
+
+import java.util.Scanner;
+class ifs{
+	public static void main(String args[])
+	{
+	int age;
+	System.out.println("Enter your age :  ");
+	Scanner en=new Scanner(System.in);
+	age=en.nextInt();
+	if(age>=18)
+	{
+	System.out.println("Your are eligible");
+	}
+}
+}
+_---------------------------_______________________________________
+if else
+_______
+import java.util.Scanner;
+class ifs{
+	public static void main(String args[])
+	{
+	int age;
+	System.out.println("Enter your age :  ");
+	Scanner en=new Scanner(System.in);
+	age=en.nextInt();
+	if(age>=18)
+	{
+	System.out.println("Your are eligible");
+	}
+	else
+	{
+		System.out.println("Your are not eligible");
+	}
+}
+}
+__________________________________________________________________
+else if lader
+______________
+import java.util.Scanner;
+class elif{
+	public static void main(String args[])
+
+	{
+		float avg;
+		System.out.println("Enter your mark : ");
+		Scanner in=new Scanner(System.in);
+		avg=in.nextFloat();
+		if(avg>=90 && avg<=100)
+		{
+			System.out.println("Grade A");
+		}
+		else if(avg>=80 && avg<=89)
+		{
+			System.out.println("Grade B");
+		}
+		else if(avg>=70 && avg<=79)
+		{
+			System.out.println("Grade C");
+		}
+		else if(avg>=60 && avg<=50)
+		{
+			System.out.println("Grade D");
+		}
+		else
+		{
+			System.out.println("Faill");
+		}
+		
+	}
+}
+_______________________________________________________________
+nested if
+__________
+
+import java.util.Scanner;
+class nest{
+	public static void main(String args[])
+	{
+	int age;
+	char gen;
+	System.out.println("Enter your age :  ");
+	Scanner en=new Scanner(System.in);
+	age=en.nextInt();
+
+	if(age>=18)
+	{
+	System.out.println("Your are eligible");
+	System.out.println("Enter your gender :  ");
+	gen=en.next().charAt(0);
+	
+	
+	if(gen=='m' || gen=='M')
+	{
+	System.out.println("Room a");
+	}
+	
+	else if(gen=='f' || gen=='F')
+	{
+	System.out.println("Room b");
+	}
+	else{
+	System.out.println("Room c");
+	}
+	}
+	else
+	{
+		System.out.println("Your are not eligible");
+	}
+}
+}
+_____________________________________________________________
+switch
+------
+import java.util.Scanner;
+public class switch_s{
+	public static void main (String args[])
+	{
+		int day;
+		System.out.println("Enter the day : ");
+		Scanner in = new Scanner(System.in);
+		day= in.nextInt();
+		    switch (day) {
+      case 1:
+        System.out.println("Monday");
+        break;
+      case 2:
+        System.out.println("Tuesday");
+        break;
+      case 3:
+        System.out.println("Wednesday");
+        break;
+      case 4:
+        System.out.println("Thursday");
+        break;
+      case 5:
+        System.out.println("Friday");
+        break;
+      case 6:
+        System.out.println("Saturday");
+        break;
+      case 7:
+        System.out.println("Sunday");
+        break;
+		default:
+		 System.out.println("Invalid");
+        break;
+    }
+	}
+}
+____________________________________________________________________
+group switch
+___________
+
+import java.util.Scanner;
+public class conswi{
+	public static void main (String args[])
+	{
+		char c;
+		System.out.println("Enter the charecter : ");
+		Scanner in = new Scanner(System.in);
+		c= in.next().charAt(0);
+	switch (c) {
+      case 'a':
+	  case 'e':
+	  case 'i':
+	  case 'o':
+	  case 'u':
+	  case 'A':
+	  case 'E':
+	  case 'I':
+	  case 'O':
+	  case 'U':
+        System.out.println("vowel");
+        break;
+		default:
+		 System.out.println(" not vowel");
+        break;
+    }
+	}
+}
+___________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

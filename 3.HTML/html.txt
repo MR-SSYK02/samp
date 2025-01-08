@@ -1,0 +1,165 @@
+HTML|
+____|
+
+HTML is the standard markup language for Web pages.
+
+With HTML you can create your own Website.
+
+HTML is easy to learn - You will enjoy it!
+
+________________________________________________________________
+HTML stands for Hyper Text Markup Language
+HTML is the standard markup language for creating Web pages
+HTML describes the structure of a Web page
+HTML consists of a series of elements
+HTML elements tell the browser how to display the content
+HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
+_________________________________________________________________________________________________________________________
+The <!DOCTYPE html> declaration defines that this document is an HTML5 document
+The <html> element is the root element of an HTML page
+The <head> element contains meta information about the HTML page
+The <title> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)
+The <body> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+The <h1> element defines a large heading
+The <p> element defines a paragraph
+_____________________________________________________________________________________________________________________________________________________________________________________
+index.html are basic
+________________________
+< open angular >close angular brackets
+___________________________________________
+<!DOCTYPE html> --its not a tag its an document type declaration
+
+____________________________________________
+<html></html>  --tags
+______________________________________________
+<head></head>  --tags
+______________________________________________
+<body>
+    tags all are plce in this position
+</body>
+_________________________________________________
+1
+<body>
+    <h1>hi hi hi</h1>  -- its an heading code
+</body>
+_______________________________________________________
+heading tag
+___________
+
+HTML headings are titles or subtitles that you want to display on a webpage.
+
+
+HTML headings are defined with the <h1> to <h6> tags.
+
+<h1> defines the most important heading. <h6> defines the least important heading.
+_______________________________
+<body>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+</body>
+all search enginees are run under heading tags
+_______
+
+HTML Paragraphs
+______________
+
+The HTML <p> element defines a paragraph.
+
+A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.
+__________________________
+<body>
+<h1>WELCOME</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam recusandae illo, eaque architecto sed possimus explicabo corrupti tempore nulla vero eligendi, quam ipsa, aspernatur accusamus voluptatum debitis. Fugiat, ea doloribus?</p>
+</body>
+________________________________
+pre tag print what  we give
+<h1>WELCOME</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam recusandae illo, eaque architecto sed possimus explicabo corrupti tempore nulla vero eligendi, quam ipsa, aspernatur accusamus voluptatum debitis. Fugiat, ea doloribus?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quos laborum dolorum natus laboriosam nobis obcaecati autem! Harum deserunt, ad velit, quisquam praesentium ea ullam laborum sunt in sed iure?</p>
+<pre>Lorem ipsum dolor 
+    sit amet consectetu
+    r adipisicing elit. 
+
+    Ratione voluptatibus a
+    periam magnam praesent
+    ium dicta dignissimos re
+    m laboriosam dolor eaque h
+    arum voluptate nobis, lab
+    orum deserunt labore sapi
+    ente provident blanditiis
+     impedit  
+    atque!</pre>
+</body>
+______________________________________________________
+HTML Links - Hyperlinks
+HTML links are hyperlinks.
+
+You can click on a link and jump to another document.
+
+When you move the mouse over a link, the mouse arrow will turn into a little hand.
+
+The HTML <a> tag defines a hyperlink. It has the following syntax:
+
+its like an attributes href            
+
+
+<a href="url">link text</a>
+_________________________________________________________
+ <a href="https://www.w3schools.com/html/html_links.asp">html</a>
+___________________________________________________________________
+img tag
+__________
+The HTML <img> tag is used to embed an image in a web page.
+
+Images are not technically inserted into a web page; images are linked to web pages. The <img> tag creates a holding space for the referenced image.
+
+The <img> tag is empty, it contains attributes only, and does not have a closing tag.
+
+The <img> tag has two required attributes:
+
+src - Specifies the path to the image
+alt - Specifies an alternate text for the image
+______________________________________________________
+    <img src="ssyk.png" alt="img" height="300px" width="300px">
+_____________________________________________________________________
+<img src="image/ssyk.png" alt="img" height="300px" width="300px">
+___________________________________________________________________________
+
+br and hr
+___________
+
+those are self closing tags
+----------------------------
+
+<hr>	<br>
+_____________________________________________
+styling attribute
+---------------------
+ <h1 style="color: rgb(243, 160, 6);">WELCOME</h1>
+
+style="background-color: aqua;"
+border
+    <img src="image/ssyk.png" alt="img" height="300px" width="300px" style="border: solid white 3px; border-radius: 10%;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

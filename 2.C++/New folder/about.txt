@@ -1,0 +1,29 @@
+function()
+inline function
+friend function
+static & class
+virtual function
+overloading
+overriding
+_______________________
+polymorphism
+	compile time
+		>>function overloading
+		>>operator overloading
+	runtime
+		>>vurtual function
+_____________________________________
+Encapsulation
+	getter 
+	setter
+______________________________________
+inhertance
+	single 
+	multiple 
+	hybride 
+	hierachical
+	multilevel
+-----------------------------------------
+abstraction
+ interface
+implement

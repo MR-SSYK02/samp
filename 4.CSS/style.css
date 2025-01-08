@@ -1,0 +1,10 @@
+    h1,h2,h3,h4{
+        color: rgb(136, 255, 0);
+    }
+body{
+    background-image: url(ssyk.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    
+}

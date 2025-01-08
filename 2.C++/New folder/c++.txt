@@ -1,0 +1,2432 @@
+C++|
+___|
+>>creator of C++ is Bjarne Stroustrup
+>> in 1979
+
+>>C++ is a popular programming language.
+C++ is used to create computer programs,
+ and is one of the most used language in game development.
+its an extension of C,
+Object-Oriented Programming (OOPs):
+_________________________________________________________________________________________________
+>>oop-objeat oriented porgraming
+>>its based on object
+>>Class: A blueprint for creating objects (a template).(blue print)
+>>Object: An instance of a class.(work of blue print).
+>>primitive data type(simple)(int,float,char)
+>>complex data-collection of complex or primitive data
+>>its work as collection of data.
+
+>>Encapsulation
+>>Abstraction
+>>Inheritance
+>>Polymorphism
+
+\\Encapsulation
+group of data with methods
+hide the data its not able to use third party
+methods> getter setter
+\\Abstraction
+show essential details
+hide others
+lap
+
+>interface amd implementation
+\\Inheritance
+use data and method on another class
+>super class and sub class
+
+\\Polymorphism
+ one method take differnt classes
+its dynamic and static
+>dynamic-its done on runtime(two function on one program)
+>static-its done on compile time(sampe class but differnt name on same program).
+_____________________________________________________________________________________________
+Line 1: #include <iostream> is a header file library that lets us work with input and output objects, such as cout (used in line 5). Header files add functionality to C++ programs.
+
+Line 2: using namespace std means that we can use names for objects and variables from the standard library.
+
+Don't worry if you don't understand how #include <iostream> and (using namespace std works). Just think of it as something that (almost) always appears in your program.
+
+Line 3: A blank line. C++ ignores white space. But we use it to make the code more readable.
+
+Line 4: Another thing that always appear in a C++ program is int main(). This is called a function. Any code inside its curly brackets {} will be executed.
+
+Line 5: cout (pronounced "see-out") is an object used together with the insertion operator (<<) to output/print text. In our example, it will output "Hello World!".
+
+Note: C++ is case-sensitive: "cout" and "Cout" has different meaning.
+
+Note: Every C++ statement ends with a semicolon ;.
+
+Note: The body of int main() could also been written as:
+int main () { cout << "Hello World! "; return 0; }
+
+Remember: The compiler ignores white spaces. However, multiple lines makes the code more readable.
+
+Line 6: return 0; ends the main function.
+
+Line 7: Do not forget to add the closing curly bracket } to actually end the main function.
+save with .cpp
+____________________________________________________________________________________________________________________________________________________________________________________________________
+sample program:
+#include<iostream>
+using namespace std;	//lib on iostream
+int main()
+{
+	cout<<"hello--!";	//consloe output
+	return 0;
+}
+________________________________________________________________
+sample 2:
+#include<iostream>
+int main()
+{
+	std::cout<<"hello--!";	std:: is an lib on iostream
+	return 0;
+}
+_____________________________________________________________________
+get input data
+
+#include<iostream>
+using namespace std;
+int main()
+{
+int a;
+cout<<"eneter your value:";
+cin>>a;
+cout<<"my value:<<a;				//>>get data on that segment
+return 0;
+}
+______________________________________________________________________________
+
+the using namespce std represent over all the iostream lib 
+if you want to declare cout and cin determine
+using std::cout;
+using std::cin;
+over all "using namespace std;"
+_____________________________________________________________________________
+if you can able to give only one variable in the concept
+we create an new name  space
+sample 3:
+
+#include<iostream>
+using namespace std;
+
+namespace name1{
+string name="ram";
+int age="52";
+}
+int main()
+{
+    cout<<name1::name;
+    cout<<name1::age;
+    return 0;
+
+}
+______________________________________________________________________________________
+ sample 4
+
+#include<iostream>
+using namespace std;
+
+namespace name1{
+string name="ram";
+int age=52;
+}
+namespace name2{
+string name="ram";
+int age=5;
+}
+using namespace name2;
+int main()
+{
+    cout<<name;			<<name<<endl; \\its move to new line
+    cout<<age;
+    return 0;
+
+}
+________________________________________________________________________________________
+how to get input datas
+----------------------
+
+integer=int variable name;
+same as float name;
+
+
+\\
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a;
+    cout<<"Enter num:";
+    cin>>a;
+    cout<<"value:"<<a;
+    return 0;
+}
+\\take tow number
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b;
+    cout<<"Enter num:";			\\"<<endl
+    cin>>a>>b;
+    cout<<"value:"<<a+b;
+    return 0;
+}
+_______________________________________________________________
+
+ char name;
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    char a;
+    cout<<"Enter char:";			\\"<<endl
+    cin>>a;
+    cout<<"value:"<<a;
+    return 0;
+}
+___________________________________________________________________________
+input type
+string=string name;
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    string a;
+    cout<<"Enter string:";			\\"<<endl
+    cin>>a;
+    cout<<"value:"<<a;
+    return 0;
+}
+____________________________________________________________________
+take line
+--------
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    string a;
+    cout<<"Enter para:";			\\"<<endl
+    getline(cin,a);
+    cout<<"value:"<<a;
+    return 0;
+}
+para=getline(cin,string name);
+______________________________________________________________________________
+STRING
+-------
+string a="welcome";
+string a('welcome')
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    string a("welcome");
+    cout<<a;
+    return 0;
+}
+________________________________________________________________________
+input function
+capacity function
+iterator function
+manipulating function
+____________________________________________________________________
+string concodination
+ connect tow string
+-------------------
+#include<iostream>
+using namespace std;
+int main()
+{
+    string firstname="yuva";
+    string lastname="raj";
+    cout<<firstname+""+lastname;
+    return 0;
+}
+________
+2   input type
+---------------
+#include<iostream>
+using namespace std;
+int main()
+{
+    string a;
+    cout<<"enter the string:";
+    cin>>a;
+    cout<<"string:"<<a;
+    return 0;
+}
+//getline(cin,a);
+
+_______________________
+3 push pop
+#include<iostream>
+using namespace std;
+int main()
+{
+    string a;
+    cout<<"enter the string:";
+    cin>>a;
+    a.push_back('s');
+    cout<<"string:"<<a<<endl;
+    a.pop_back();
+    cout<<"string:"<<a<<endl;
+    return 0;
+}
+---------------------------------------
+capacity
+--------
+#include<iostream>
+using namespace std;
+int main()
+{
+    string a;
+    cout<<"enter the string:";
+    cin>>a;
+    cout<<"size :"<<a.size()<<endl;
+    cout<<"length :"<<a.length()<<endl;
+    cout<<"max size :"<<a.max_size()<<endl;
+    return 0;
+}
+//find size something
+________________________________________________
+iterator
+--------
+#include<iostream>
+using namespace std;
+int main()
+{
+    string a;
+    cout<<"enter the string:";
+    cin>>a;
+    string::iterator it;
+    for(it=a.begin();it!=a.end();it++)
+    cout<<*it<<endl;
+    string::reverse_iterator it1;
+    for(it1=a.rbegin();it1!=a.rend();it1++)
+    cout<<*it1<<endl;
+    return 0;
+}
+___________________________________________________
+manipulating
+------------
+#include<iostream>
+using namespace std;
+int main()
+{
+    string a="hi";
+    string b="hello";
+    cout<<"before a:"<<a<<endl;
+    cout<<"before b:"<<b<<endl;
+    a.swap(b);
+    cout<<"after  a:"<<a<<endl;
+    cout<<"after  b:"<<b<<endl;
+    return 0;
+}
+___________________________________________________________
+#include <iostream>
+#include <string>
+using namespace std;
+ 
+int main () {
+  // Creating variables
+  int myNum = 5;               // Integer (whole number)
+  float myFloatNum = 5.99;     // Floating point number
+  double myDoubleNum = 9.98;   // Floating point number
+  char myLetter = 'D';         // Character
+  bool myBoolean = true;       // Boolean
+  string myString = "Hello";   // String
+   
+  // Print variable values
+  cout << "int: " << myNum << "\n";
+  cout << "float: " << myFloatNum << "\n";
+  cout << "double: " << myDoubleNum << "\n";
+  cout << "char: " << myLetter << "\n";
+  cout << "bool: " << myBoolean << "\n";
+  cout << "string: " << myString << "\n";
+ 
+  return 0;
+}
+
+__________________________________________________________
+if else
+-------
+if statement
+------------
+1
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b;
+    cout<<"Enter your value of a&b :";
+    cin>>a>>b;
+    if(a>b)
+    {
+        cout<<a<<"is greater";
+    }
+      if(b<a)
+    {
+         cout<<b<<"is greater";
+
+    }
+    if(a==b)
+    {
+    cout<<a<<"and"<<b<<"is equal";
+    }
+  return 0;
+}
+____________________________________________________________________
+if else
+-------
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    char a;
+    cout<<"Enter the letter:";
+    cin>>a;
+    if(a=='a'||a=='e'||a=='i'||a=='o'||a=='u'||a=='A'||a=='E'||a=='I'||a=='O'||a=='U')
+    {
+        cout<<a<<"is vowel";
+    }
+    else
+    {
+        cout<<a<<"is not a vowel";
+    }
+    return 0;
+}
+___________________________________________________________________________________________
+else if ladder
+--------------
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int h,t;
+    float c;
+    cout<<"Enter the value of hardness ,tensile strength ,carbon content";
+    cin>>h>>c>>t;
+    if(h>50 && c<0.5 && t>5420)
+    {
+        cout<<"steel is good";
+    }
+    else if(h>50 && c<0.5)
+    {
+        cout<<"steel is average";
+    }
+    else if(c<0.5 && t>5420)
+        cout<<"its ok";
+    else if(h>50 || c<0.5 || t>5420)
+    {
+        cout<<"better";
+    }
+    else
+    {
+        cout<<"ok";
+    }
+          return 0;
+}
+____________________________________________________________
+nested if
+---------
+#include<iostream>
+using namespace std;
+int main()
+{
+    char gender;
+    int age;
+    cout<<"Enter your age    : "<<endl;
+    cin>>age;
+    if(age>=18)
+    {
+        cout<<"Enter your gender : "<<endl;
+        cin>>gender;
+        if(gender=='M'|| gender=='m')
+            cout<<"room 5";
+        else if(gender=='F'|| gender=='f')
+            cout<<"room 6";
+        else
+        {
+            cout<<"invalid gender";
+        }
+    }
+    else
+    {
+        cout<<"your not eligeble";
+    }
+    return 0;
+}
+____________________________________________________________________________________
+switch in c++
+--------------
+>> its more efficent then if else statement
+>> if you didn't give break its continue to next state.
+syntax
+~~~~~~
+switch (expression) {
+    case value1:
+        // Code to execute if expression == value1
+        break;
+
+    case value2:
+        // Code to execute if expression == value2
+        break;
+
+    case value3:
+        // Code to execute if expression == value3
+        break;
+
+    default:
+        // Code to execute if no case matches
+        break;
+}
+_______________________________________________________________________
+1
+#include<iostream>
+using namespace std;
+int main()
+{
+    int d;
+    cout<<"enter the day : ";
+    cin>>d;
+    switch(d)
+    {
+    case 1:
+        cout<<"sunday"<<endl;
+        break;
+        case 2:
+        cout<<"monday"<<endl;
+        break;
+        case 3:
+        cout<<"tuesday"<<endl;
+        break;
+        case 4:
+        cout<<"wednesday"<<endl;
+        break;
+        case 5:
+        cout<<"thursday"<<endl;
+        break;
+        case 6:
+        cout<<"friday"<<endl;
+        break;
+        case 7:
+        cout<<"saturday"<<endl;
+        break;
+        default:
+        cout<<"not register"<<endl;
+        break;
+
+    }
+    return 0;
+}
+_____________________________________________________________________
+task: group switch on month
+_____________________________
+
+loopin statement
+~~~~~~~~~~~~~~~~
+>>while
+>>do while //exist cheack
+>>for
+>>for each
+-----------------
+while loop
+----------
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i=1,n;
+    cout<<"Enter the limit : ";
+    cin>>n;
+    while(i<=n)
+    {
+        cout<<i<<endl;
+        i++;
+    }
+    return 0;
+}
+____________________________________________________________________
+do while
+--------
+its small change it first complete and check
+---
+syntax
+------
+do {
+    // Code to be executed
+} while (condition);
+_________________________________________________
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i=1,n;
+    cout<<"Enter the limit : ";
+    cin>>n;
+    do{
+        if(i%2==0)
+            cout<<i<<endl;
+        i++;
+    }
+    while(i<=n);
+
+    return 0;
+}
+______________________________________________________________
+for loop
+--------
+syntax
+------
+for (initialization; condition; increment/decrement) {
+    // Code to be executed in each iteration
+}
+_________________________________________________________________
+int main()
+{
+    int i,n;
+    cout<<"Enter your number : ";
+    cin>>n;
+    for(i=1;i<=n;i++)
+    {
+        cout<<i<<endl;
+    }
+    return 0;
+}
+____________________________________________________________________
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i,n,t;
+    cout<<"Enter your number : ";
+    cin>>n;
+    cout<<"Enter the table value : ";
+    cin>>t;
+    for(i=1;i<=n;i++)
+    {
+        cout<<i<<"*"<<t<<"="<<t*i<<endl;
+    }
+    return 0;
+}
+_______________________________________________________________________
+for each loop
+-------------
+ iterate over elements in a container (e.g., arrays, vectors, lists)
+ without using explicit iterators or indexing.
+---------------
+#include<iostream>
+using namespace std;
+int main()
+{
+    char a[]={1,2,3,4,5};
+    for(char x :a)
+    {
+        cout<<x<<endl;
+    }
+    return 0;
+}
+______________________________________________________________________________
+armstrong number
+-----------------
+mean which 3 number can same answer while its split and cube the value and add is same
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int sum=0,n,t,r;
+    cout<<"Enter the 3 digit number : ";
+    cin>>n;
+    t=n;			//for(i=100;i<=999;i++
+				//n=i
+    while(n>0)
+    {
+        r=n%10;
+        sum=sum+(r*r*r);
+        n=n/10;
+    }
+    if(sum==t){
+
+        cout<<"Its an armstrong Number";		//<<i<<endl
+    }							//sum=0
+    //else{
+        cout<<"Its not an armstrong number";
+    }
+
+    return 0;
+}
+__________________________________________________________________________
+array
+-----
+In C++, arrays are a fundamental data structure used to store 
+a fixed-size sequence of elements of the same type. 
+syntax
+------
+dataType arrayName[arraySize];{}
+
+its an collection of homogeious function.
+#include<iostream>
+using namespace std;
+int main()
+{					//    cout<<sizeof(a)/sizeof(int);
+    int a[5]={10,20};
+    for(int x:a)
+    cout<<x<<endl;
+    return 0;
+}
+________________________________________________
+loop in array
+-------------
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a[100],n,i,x;
+    cout<<"Enter the limit: ";
+    cin>>n;
+    for(i=0;i<n;i++)
+    {
+        cout<<"enter the value : ";
+        cin>>a[i];
+    }
+    cout<<"Enter the value to search";
+    cin>>x;
+    for(i=0;i<n;i++)
+    {
+        if(a[i]==x)
+        {
+            cout<<"value is found"<<i;
+            return 0;
+        }
+    }
+    cout<<"its not found";
+    return 0;
+}
+------------------------------------------------------------------
+sort
+----
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a[100],n,i,j,temp;
+    cout<<"Enter the limit :";
+    cin>>n;
+    for(i=0;i<n;i++)
+    {
+        cout<<"Enter the value : ";
+        cin>>a[i];
+    }
+    for(i=0;i<n;i++)
+    {
+        for(j=i+1;j<n;j++)
+        {
+            if(a[i]>a[j])
+            {
+                temp=a[i];
+                a[i]=a[j];
+                a[j]=temp;
+            }
+        }
+    }
+    cout<<"sorted array: "<<endl;
+    for(i=0;i<n;i++)
+    {
+        cout<<a[i]<<endl;
+    }
+    return 0;
+}
+_______________________________________________
+Function
+--------
+ functions are blocks of code that perform a specific task.
+ They help organize code, improve reusability, and make programs easier to understand and maintain.
+
+syntax
+------
+returnType functionName(parameterList) {
+    // Function body
+    return value; // Optional, depending on the return type
+}
+_____________________________________
+#include<iostream>
+using namespace std;
+void fun()
+{
+    int a,b,c;
+    cout<<"Enter the numbers : ";
+    cin>>a>>b;
+    c=a+b;
+    cout<<"Total : "<<c;
+}
+int main()
+{
+    fun();
+    return 0;
+}
+___________________________________________________________________
+default argument function
+------------------------
+#include<iostream>
+using namespace std;
+void bio(string name,int age,string city)
+
+{
+    cout<<name<<" is from "<<city <<" "<<age<<" years old";
+
+}
+int main()
+{
+
+    bio("yuva",21,"vpm");
+    return 0;
+}----------------------------------------
+#include<iostream>
+using namespace std;
+void bio(string name,int age,string city="vpm")
+
+{
+    cout<<name<<" is from "<<city <<" "<<age<<" years old";
+
+}
+int main()
+{
+
+    bio("yuva",21,"selam");
+    bio("yuva",21);
+    return 0;
+}
+_________________________________________________________________________
+inline function
+-----------------
+
+syntax
+-------
+inline returnType functionName(parameters) {
+    // Function body
+}
+______________________________________________
+its assigen the data directly
+and give smaller memory space
+#include<iostream>
+using namespace std;
+inline int cube(int x)
+{
+    int result =x*x*x;
+    return result;
+}
+int main()
+{
+    int x=2;
+    cout<<"cube is : "<<cube(x);
+    return 0;
+}
+__________________________________________________
+_____________________________________________________________________
+Templets
+--------
+#include<iostream>	//reference
+using namespace std;
+void swap(int &a,int &b)
+
+{
+    int t=a;
+    a=b;
+    b=t;
+}
+int main()
+{
+    int a=10,b=20;
+    cout<<"before swap A: "<<a<<" | B :"<<b<<endl;
+    swap(a,b);
+    cout<<"after swap A: "<<a<<" | B :"<<b<<endl;
+    return 0;
+}----------------------------------------------------
+syntax
+------
+template <typename T>
+returnType functionName(T parameter) {
+    // Function body
+}
+-------------------------------------------
+#include<iostream>
+using namespace std;
+template <class T>
+void swaping(T &a,T &b)
+
+{
+    T t=a;
+    a=b;
+    b=t;
+}
+int main()
+{
+    int a=10,b=20;
+    cout<<"before swap A: "<<a<<" | B :"<<b<<endl;
+    swaping(a,b);
+    cout<<"after swap A: "<<a<<" | B :"<<b<<endl;
+    return 0;
+}
+_________________________________________________________________________
+
+ENUM		//enumeration
+-----
+you can define a type with a set of values that are logically related, making your code more readable and maintainable.
+---
+syntax
+-------
+enum EnumName {
+    Constant1,
+    Constant2,
+    Constant3,
+    // ...
+};
+-----------------------------------------------------
+#include <iostream>
+using namespace std;
+
+// Define an enum type for days of the week
+enum Day { Sunday,
+ Monday,
+ Tuesday,
+  Wednesday,
+   Thursday,
+    Friday,
+     Saturday };
+
+int main() {
+    Day today = Wednesday;
+    cout << "Value of today: " << today << endl;
+
+    return 0;
+}
+________________________________________________________________________
+class
+-----
+class is a blueprint for creating objects (instances of the class). 
+ Classes allow you to bundle data and functions together, enabling encapsulation, which is one of the core concepts of object-oriented programming (OOP).
+syntax
+---------
+class ClassName {
+private:
+    // Private members (variables and methods)
+    int privateVariable;
+
+public:
+    // Public members (variables and methods)
+    void setPrivateVariable(int value) {
+        privateVariable = value;
+    }
+
+    int getPrivateVariable() {
+        return privateVariable;
+    }
+};
+---------------------------------------------------------------
+#include <iostream>
+using namespace std;
+class circle
+{
+private:
+    float radius;
+public:
+    float area()
+    {
+        cout<<"Enter the radius : ";
+        cin>>radius;
+        return(3.14*(radius*radius));
+
+    }
+};
+int main()
+{
+    circle o;
+    cout<<"area of the circle : "<<o.area();
+    return 0;
+}
+________________________________________________________________________
+#include <iostream>
+using namespace std;
+class circle
+{
+private:
+    float radius;
+public:
+    float area()
+    {
+        cout<<"Enter the radius : ";
+        cin>>radius;
+        return(3.14*(radius*radius));
+
+    }
+    float circumfrence()
+    {
+        return(2*3.14*radius);
+    }
+};
+int main()
+{
+    circle o;
+    cout<<"area of the circle : "<<o.area()<<endl;
+    cout<<"area of the circumfrence : "<<o.circumfrence();
+    return 0;
+}
+_________________________________________________________________________
+access specifer
+----------------
+public
+private
+protected /// in inheritance
+----------
+public
+--------
+use in any were
+--
+#include <iostream>
+using namespace std;
+class student
+{
+    public:
+    string name;
+    int age;
+
+};
+int main()
+{
+    student o;
+    o.name="abcd";
+    o.age=30;
+    cout<<o.name<<endl;
+    cout<<o.age<<endl;
+
+    return 0;
+}
+_______________________________
+#include <iostream>
+using namespace std;
+class student
+{
+    public:
+    string name;
+    int age;
+    void display()
+    {
+    cout<<"name"<<name<<endl;
+    cout<<"age"<<age<<endl;
+
+    }
+};
+int main()
+{
+    student o;
+    o.name="abcd";
+    o.age=30;
+    o.display();
+    return 0;
+}
+______________________________________________________________
+private 
+----------
+didn't use in out side off the class
+#include <iostream>
+using namespace std;
+class student
+{
+private:
+    string name;
+    int age;
+
+public:
+    void getdata()
+    {
+    cout<<"name"<<name<<endl;
+    cout<<"age"<<age<<endl;
+    name="abcd";
+    age=30;
+    }
+    void display()
+    {
+    cout<<"name"<<name<<endl;
+    cout<<"age"<<age<<endl;
+
+    }
+};
+int main()
+{
+    student o;
+
+    o.getdata();
+    o.display();
+    return 0;
+}
+________________________________________________________________
+scope resolution
+----------------
+operator ::
+______------
+#include<iostream>
+using namespace std;
+class student
+{
+private:
+    string name;
+    int age,m1,m2,m3,total;
+    float avg;
+public:
+    void getdata()
+    {
+        cout<<"Enter the name  : ";
+        cin>>name;
+        cout<<"Enter your age  : ";
+        cin>>age;
+        cout<<"Enter the marks : ";
+        cin>>m1>>m2>>m3;
+    }
+    void display();
+};
+void student::display()
+{
+    total=m1+m2+m3;
+    avg=total/3;
+    cout<<"name     : "<<name<<endl;
+    cout<<"m1       : "<<m1<<endl;
+    cout<<"m2       : "<<m2<<endl;
+    cout<<"m3       : "<<m3<<endl;
+    cout<<"total    : "<<total<<endl;
+    cout<<"average  : "<<avg<<endl;
+}
+int main()
+{
+    student o;
+
+    o.getdata();
+    o.display();
+    return 0;
+}
+_________________________________________________________________________________
+constructor 
+-----------
+a constructor is a special member function of a class that is automatically called when an object of the class is created.
+ Constructors are used to initialize the object's data members.
+______________________
+syntax
+-----
+class ClassName {
+public:
+    ClassName();  // Constructor declaration
+};
+_-----------------------------------------------
+
+In C++, a constructor is a special member function of a class that is automatically called when an object of the class is created. Constructors are used to initialize the object's data members.
+
+Key Characteristics of a Constructor:
+Same Name as the Class: The constructor's name must match the class name exactly.
+No Return Type: Constructors do not have a return type, not even void.
+Called Automatically: The constructor is invoked automatically when an object is created.
+Overloading: Constructors can be overloaded to allow for different ways of initializing objects.
+Default Constructor: If no constructor is provided, the compiler generates a default constructor.
+___________________________________________
+Types of Constructors
+====================
+>>Default Constructor
+>>Parameterized Constructor
+>>Copy Constructor
+__________________________________________
+default
+========
+#include<iostream>
+using namespace std;
+class math
+{
+private:
+    int a,b,c;
+public:
+    math()
+    {
+        a=0;
+        b=0;
+    }
+    void add()
+    {
+        c=a+b;
+        cout<<"Total : "<<c;
+    }
+
+};
+int main()
+{
+    math o;
+    o.add();
+    return 0;
+}
+______________________________________________________________
+Parameterized Constructor
+=========================
+i want give value while create an object
+within the object on circle values
+#include<iostream>
+using namespace std;
+class math
+{
+private:
+    int a,b,c;
+public:
+    math(int x,int y)
+    {
+        a=x;
+        b=y;
+    }
+    void add()
+    {
+        c=a+b;
+        cout<<"Total : "<<c;
+    }
+
+};
+int main()
+{
+    math o(10,20);
+    o.add();
+    return 0;
+}
+________________________________________________________________
+copy Constructor
+================
+#include<iostream>
+using namespace std;
+class math
+{
+private:
+    int a,b,c;
+public:
+    math(int x,int y)
+    {
+        a=x;
+        b=y;
+    }
+     math(math &x)
+    {
+        a=x.a;
+        b=x.b;
+    }
+    void add()
+    {
+        c=a+b;
+        cout<<"Total : "<<c<<endl;
+    }
+
+};
+int main()
+{
+    math o(10,20);
+    math o1(o);
+    o1.add();
+    o.add();
+    return 0;
+}__________________________________________________________________________________________
+constrctor overloading
+=======================
+combine of all constructor
+----------------------------
+#include<iostream>
+using namespace std;
+class math
+{
+private:
+    int a,b,c;
+public:
+       math()
+    {
+        a=0;
+        b=0;
+    }
+     math(int x,int y)
+    {
+        a=x;
+        b=y;
+    }
+
+     math(math &x)
+    {
+        a=x.a;
+        b=x.b;
+    }
+    void add()
+    {
+        c=a+b;
+        cout<<"Total : "<<c<<endl;
+    }
+
+};
+int main()
+{
+    math o1;
+    math o2(10,20);
+    math o3(o2);
+    o1.add();
+    o2.add();
+    o3.add();
+    return 0;
+}
+________________________________________________________________________________________
+destructor
+-----------------
+ destructor is a special member function of a class that is automatically invoked when an object of the class is destroyed.
+ The purpose of a destructor is to clean up resources (like dynamically allocated memory or other resources such as file handles)
+ that were acquired during the lifetime of an object.
+its clear itself
+---------------------------------------------
+#include<iostream>
+using namespace std;
+class math
+{
+private:
+    int a,b,c;
+public:
+    math()
+    {
+        a=10;
+        b=20;
+    }
+    ~math()
+    {
+        cout<<"memory erased";
+    }
+    void add()
+    {
+        c=a+b;
+        cout<<"Total : "<<c<<endl;
+    }
+};
+int main()
+{
+    math o;
+    o.add();
+    return 0;
+}		don't want to declered it
+_________________________________________________________________________
+Inheritance in C++
+********************
+Inheritance is a fundamental concept in object-oriented programming (OOP) that allows one class (called a derived class) to inherit properties and behaviors (data members and member functions) from another class (called a base class).
+ This promotes code reusability and establishes a relationship between different classes.
+
+In C++, inheritance allows you to create a new class based on an existing class.
+ The new class (derived class) can have additional members or override the base class's members, thus extending or modifying its functionality.
+Key Concepts of Inheritance:
+''''''''''''''''''''''''''''
+Base Class (Parent Class): The class whose properties and methods are inherited by another class.
+Derived Class (Child Class): The class that inherits the properties and behaviors of the base class.
+Access Specifiers: Define the visibility of the base class members in the derived class (public, protected, and private).
+
+use propertys in another class
+
+Syntax for Inheritance:
+~~~~~~~~~~~~~~~~~~~~~~~
+class DerivedClass : accessSpecifier BaseClass {
+    // Additional members for the derived class
+};
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Types of Inheritance:
+---------------------
+
+>> Single Inheritance: A derived class inherits from a single base class.
+>> Multiple Inheritance: A derived class inherits from more than one base class.
+>> Multilevel Inheritance: A class is derived from a derived class, forming a chain.
+>> Hierarchical Inheritance: Multiple classes are derived from a single base class.
+>> Hybrid Inheritance: A combination of more than one type of inheritance.
+``````````````````````````````````````````````````````````````````````````````````````````````````````
+ Single Inheritance
+^^^^^^^^^^^^^^^^^^^^^
+>> one derived class inherits from one base class.
+>>its derive only one class only
+>>class A//base or parent or super class
+>>class B//derived or child or sub class
+_____________________________________________
+
+#include<iostream>
+using namespace std;
+class father
+{
+public:
+    void house()
+    {
+        cout<<"have house"<<endl;
+    }
+};
+class son:public father
+{
+public:
+    void car()
+    {
+        cout<<"have car"<<endl;
+    }
+};
+int main()
+{
+    son o;
+    o.house();
+    o.car();
+    return 0;
+}
+______________________________________________________________
+Multiple Inheritance
+____________________
+it have more than one parent class and one child
+----------------------------------
+#include<iostream>
+using namespace std;
+class father
+{
+public:
+    void fishing()
+    {
+        cout<<"learning fishing"<<endl;
+    }
+};
+class mother
+{
+public:
+    void cooking()
+    {
+        cout<<"learning cooking"<<endl;
+    }
+
+};
+class son:public father,public mother
+{
+public:
+    void skill()
+    {
+        cout<<"skill in programing"<<endl;
+    }
+};
+int main()
+{
+    son o;
+    o.fishing();
+    o.cooking();
+    o.skill();
+    return 0;
+}
+____________________________________________________________
+Multilevel Inheritance
+_________________--------
+A class is derived from a derived class, forming a chain.
+ its like chain
+___________________________________________________________
+#include<iostream>
+using namespace std;
+class grandfather
+{
+public:
+    void house()
+    {
+        cout<<"have house"<<endl;
+    }
+};
+class father:public grandfather
+{
+public:
+    void land()
+    {
+        cout<<"have land"<<endl;
+    }
+};
+class son:public father
+{
+public:
+    void car()
+    {
+        cout<<"have car"<<endl;
+    }
+};
+
+int main()
+{
+    son o;
+    o.house();
+    o.car();
+    o.land();
+    return 0;
+}
+_______________________________________________________________________________________
+Hybrid Inheritance
+-----------------------
+>>A combination of more than one type of inheritance.
+
+#include<iostream>
+using namespace std;
+class grandfather
+{
+public:
+    void house()
+    {
+        cout<<"have house"<<endl;
+    }
+};
+class father:public grandfather
+{
+public:
+    void land()
+    {
+        cout<<"have land"<<endl;
+    }
+};
+class mother
+{
+public:
+    void gold()
+    {
+        cout<<"have gold"<<endl;
+    }
+};
+class son:public father,public mother
+{
+public:
+    void car()
+    {
+        cout<<"have car"<<endl;
+    }
+};
+
+int main()
+{
+    son o;
+    o.house();
+    o.car();
+    o.land();
+    o.gold();
+    return 0;
+}
+------------------------------------------------------------------------------------
+Hierarchical Inheritance
+________________________
+ Multiple classes are derived from a single base class.
+its like a tree
+------------------
+#include<iostream>
+using namespace std;
+class shape
+{
+public:
+    float length,breath,radius;
+};
+class rectangle:public shape
+{
+public:
+    void rectangle_details()
+    {
+        cout<<"enter the length : ";
+        cin>>length;
+        cout<<"enter the breath : ";
+        cin>>breath;
+    }
+    float rectangle_area()
+    {
+        return length*breath;
+    }
+
+};
+class circle:public shape
+{
+public:
+    void circle_details()
+    {
+        cout<<"enter the radius : ";
+        cin>>radius;
+    }
+    double circle_area()
+    {
+        return 3.14*(radius*radius);
+    }
+};
+class square:public shape
+{
+public:
+    void square_details()
+    {
+        cout<<"enter the length : ";
+        cin>>length;
+    }
+    double square_area()
+    {
+        return length*length;
+    }
+};
+int main()
+{
+    rectangle r;
+    circle c;
+    square s;
+    r.rectangle_details();
+    cout<<"area of rectangle :"<<r.rectangle_area()<<endl;
+    c.circle_details();
+    cout<<"area of circle :"<<c.circle_area()<<endl;
+    s.square_details();
+    cout<<"area of square :"<<s.square_area()<<endl;
+    return 0;
+}
+_______________________________________________________________________________
+dimond problem
+---------------
+#include<iostream>
+using namespace std;
+class a
+{
+public:
+    void display()
+    {
+        cout<<"display";
+    }
+
+};
+class b:virtual public a
+{
+public:
+    void show()
+    {
+        cout<<"show";
+    }
+};
+class c:virtual public a
+{
+
+};
+class d:public b,public c
+{
+
+};
+int main()
+{
+    d o;
+    o.show();
+    o.display();
+return 0;
+}
+____________________________________________________
+protected access specifier
+--------------------------
+it can able to use an same and inhertance program
+#include<iostream>
+using namespace std;
+class a
+{
+protected:
+    int x;
+
+};
+class b:public a
+{
+public:
+    void get_details()
+    {
+        cout<<"\nEnter the value : ";
+        cin>>x;
+    }
+    void display()
+    {
+        cout<<x;
+    }
+
+};
+int main()
+{
+    b o;
+    o.get_details();		//o.x=34
+    o.display();
+    return 0;
+}
+_________________________________________________________________
+function overriding
+===================
+same function name and same parameter 
+but different defenetion
+we can redefined it 
+________________
+#include<iostream>
+using namespace std;
+class base
+{
+protected:
+    int a,b;
+public:
+    void add()
+    {
+        cout<<"Enter the nums : "<<endl;
+        cin>>a>>b;
+        cout<<"Total :  "<<a+b<<endl;
+    }
+};
+class derived:public base
+{
+private:
+    int c;
+public:
+    void add()
+    {
+        cout<<"Enter the nums : "<<endl;
+        cin>>a>>b>>c;
+        cout<<"Total :  "<<a+b+c<<endl;
+    }
+
+};
+int main()
+{
+    base o;
+    o.add();
+    derived d;
+    d.add();
+    return 0;
+}//its redefined the code
+_____________________________________________________________
+polymorphism 
+-------------
+single person in multitask
+---
+it have tow types are: compile and run time
+compile time : function overloading;and operator overloading
+runtime: virtual function:
+_______________________________
+Function overloading
+`````````````````````
+Function overloading in C++ allows multiple functions to have the same name but differ in:
+
+The number of parameters.
+The types of parameters.
+The order of parameters.
+This enables the same function name to perform different tasks based on the arguments passed to it.
+-------
+#include<iostream>
+using namespace std;
+int sum(int a,int b)
+{
+    return a+b;
+}
+int main()
+{
+   cout<<"total : "<<sum(10,20);
+    return 0;
+}-----------
+
+#include<iostream>
+using namespace std;
+int sum(int a,int b)
+{
+    return a+b;
+}
+int sum(int a,int b,int c)
+{
+    return a+b+c;
+}
+int main()
+{						//it not determine tha int,float,char f
+   cout<<"total : "<<sum(10,20);
+   cout<<"\n total : "<<sum(10,20,30);
+    return 0;
+} 		\\function overloading has same function name ut different parameters
+---------------------------------------------------------------
+operator overloading
+~~~~~~~~~~~~~~~~~~~~
+we can overload most of the bulit in operators available in c++
+(+-*/)
+______
+operators ont over load
+::>>scope 
+>>sizeof
+.>>member selector
+*>>member pointer selector
+?:>> ternary operator
+`````````````````````````````
+sample operator
+===============
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c;
+    a=10;
+    b=49;
+    c=a+b;//concodination
+    cout<<c;
+    return 0;
+}
+-------------------------------
+#include<iostream>
+using namespace std;
+class complex
+{
+private:
+    int real,img;//21,32i
+public:
+    complex(){real=0;img=0;}
+    complex(int r,int i){real=r;img=i;}
+    void print()
+    {
+        cout<<real<<"+"<<img<<"i"<<endl;
+    }
+    complex operator +(complex c)
+    {
+        complex temp;
+        temp.real=real+c.real;//c1,c2
+        temp.img=img+c.img;
+        return temp;
+    }
+};
+int main()
+{
+    complex c1(2,5);
+    complex c2(3,4);
+    complex c3;
+    c3=c1+c2;
+    c3.print();
+    return 0;
+}
+________________________________________________________
+unary operator overloading
+==========================
+++
+__
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a=10;
+    a++;
+    cout<<a;
+
+    return 0;
+}
+___________________
+#include<iostream>
+using namespace std;
+class box
+{
+private:
+    int x;
+public:
+    box(){x=0;}
+    box(int a){x=a;}
+    void print()
+    {
+        cout<<"x : "<<x<<endl;
+    }
+    void operator ++()
+    {
+        ++x;
+    }
+};
+int main()
+{box o;
+o.print();
+++o;
+o.print();
+    return 0;
+}		//if give an int get post set otherwise its preincrement
+_____________________________________________________
+#include<iostream>
+using namespace std;
+class car
+{
+   public:
+       void start()
+    {
+        cout<<"car start"<<endl;
+    }
+};
+class bmw:public car
+{
+public:
+    void gear()
+    {
+        cout<<"advance gear"<<endl;
+    }
+};
+int main()
+{
+   /* bmw o;
+    o.start();
+    o.gear();*/
+    bmw b;
+    car *p=NULL;
+    p=&b;
+    p->start();
+    /*p->gear();*/
+    return 0;
+}
+_________________________________________________
+virtual function
+------------------
+A virtual function in C++ is a function in the base class that can be overridden in derived classes. 
+The purpose of a virtual function is to allow for dynamic polymorphism, where the method to be invoked is determined at runtime based on the type of the object,
+not the type of the pointer or reference.
+
+#include<iostream>
+using namespace std;
+class base
+{
+   public:
+      virtual void fun()
+    {
+        cout<<"function"<<endl;
+    }
+};
+class derived:public base
+{           //overriding
+public:
+    void fun()
+    {
+        cout<<"advance function"<<endl;
+    }
+};
+int main()
+{
+    derived o;
+    base *p=&o;
+    p->fun();
+    return 0;
+}
+_________________________________________________________________
+#include<iostream>
+using namespace std;
+class bike
+{
+   public:
+      virtual void start()
+       {					=0
+           cout<<"bike start"<<endl;
+
+        }
+};
+class pulser:public bike
+{
+public:
+    void start()
+    {
+        cout<<"advance";
+    }
+};
+int main()
+{
+    bike *p=new pulser();//base class pointer derived class value
+    p->start();
+    return 0;
+}
+_________________________________________________________
+abstraction
+_______________
+only show useful things
+hide others
+_______________________
+Abstract Classes (Classes with at least one pure virtual function).
+Interfaces (Pure abstract classes).
+syntax
+-=--==
+class AbstractClass {
+public:
+    // Pure virtual function (has no definition)
+    virtual void display() = 0;
+};
+=============================================
+#include<iostream>
+using namespace std;
+class bank
+{
+public:
+
+    virtual void db()=0;
+
+};
+class hdfc:public bank
+{
+public:
+    void db()
+    {
+        cout<<"hdfc"<<endl;
+    }
+};
+class sbi:public bank
+{
+public:
+    void db()
+    {
+        cout<<"sbi"<<endl;
+    }
+};
+int main()
+{
+    bank *b= new hdfc();
+    b->db();
+    return 0;
+}		//hide unwanted datas
+________________________________________
+getter and setters
+------------------
+#include<iostream>
+using namespace std;
+class student
+{
+private:
+    string name;
+    int age;
+public:
+    student(string n,int a)
+    {
+        name=n;
+        age=a;
+    }
+    string getname()
+    {
+        return this->name;
+    }
+    void setname(string n)
+    {
+        this->name=n;
+    }
+    void print()
+    {
+        cout<<name<<endl;
+        cout<<age<<endl;
+    }
+};
+int main()
+{
+    student o("yuva",21);
+    o.print();
+    o.setname("raj");
+    o.print();
+    return 0;
+}				use private class in out side
+___________________________________________________________________
+static variable and static function
+---------------------------------------
+count on systemeticaly
+not able to give in constructor
+#include<iostream>
+using namespace std;
+class student
+{
+private:
+    static int x;
+    string name;
+    int age;
+public:
+    student(string n,int a)
+    {
+        x++;
+        name=n;
+        age=a;
+    }
+    void print()
+    {
+        cout<<name<<endl;
+        cout<<age<<endl;
+    }
+    static int getcount()
+    {
+        return x;
+    }
+};
+int student::x=0;
+int main()
+{
+    student o("yuva",21);
+     student e("yuva",21);
+      student f("yuva",21);
+    o.print();
+    e.print();
+    f.print();
+    cout<<student::getcount();
+    return 0;
+}
+_________________________________________________________________________
+friend function
+-----------------
+it can able to use any more
+on main and class
+#include<iostream>
+using namespace std;
+class a
+{
+private:
+    int x,y;
+public:
+   friend void data();
+};
+ void data()
+    {
+        a o;
+        o.x=10;
+        o.y=20;
+        cout<<o.x<<endl;
+        cout<<o.y<<endl;
+    }
+int main()
+{
+    data();
+    return 0;
+}
+_____________________________________________________________
+friend class
+------------
+#include<iostream>
+using namespace std;
+class b;
+class a
+{
+private:
+    int x=10;
+    friend b;
+};
+class b
+{
+public:
+    a o;
+    void data()
+    {
+        cout<<o.x;
+    }
+};
+
+int main()
+{
+    b o;
+    o.data();
+    return 0;
+}
+______________________________________________________________________
+member intializer list
+----------------------
+adding data in outer void:
+-----
+#include<iostream>
+using namespace std;
+class base
+{
+private:
+    int x;
+public:
+    base(int a)
+    {
+       x=a;
+    }
+    void print()
+    {
+        cout<<x;
+    }
+};
+int main()
+{
+    base op(25);
+    op.print();
+    return 0;
+}
+-------------------------------------------normal
+#include<iostream>
+using namespace std;
+class base
+{
+private:
+    int x;
+public:
+    base(int a):x(a)//inizilaizer
+    {
+    }
+    void print()
+    {
+        cout<<x;
+    }
+};
+int main()
+{
+    base op(25);
+    op.print();
+    return 0;
+}
+___________________________________________________
+multi value initializer
+---------------------------
+#include<iostream>
+using namespace std;
+class base
+{
+private:
+    int x,y;
+public:
+    base(int a,int b):x(a),y(b)
+    {
+    }
+    void print()
+    {
+        cout<<x<<endl;
+        cout<<y;
+    }
+};
+int main()
+{
+    base op(25,585);
+    op.print();
+    return 0;
+}
+_____________________________________________________________________
+preprocessor
+iostream
+fstream
+std::ifstream: For reading from files.
+std::ofstream: For writing to files.
+std::fstream: For both reading and writing.
+cmath
+std::sqrt(x): Square root of x.
+std::pow(x, y): x raised to the power y.
+std::sin(x), std::cos(x), std::tan(x): Trigonometric functions.
+std::log(x): Natural logarithm of x.
+cstring
+ctime
+std::time(nullptr): Returns the current calendar time.
+std::localtime(&time): Converts calendar time to local time.
+std::asctime(ptr): Converts a tm struct to a string.
+std::difftime(end, start): Calculates the difference between two times
+vector
+.push_back(value): Adds an element to the end.
+.pop_back(): Removes the last element.
+.size(): Returns the size of the vector.
+.begin(), .end(): Returns iterators to the beginning and end.
+.at(index): Accesses an element with bounds checking.
+
+algorithm
+std::sort(begin, end): Sorts a range in ascending order.
+std::reverse(begin, end): Reverses the order of elements.
+std::find(begin, end, value): Finds the first occurrence of value.
+std::count(begin, end, value): Counts occurrences of value.
+________________________________________________________________________________________
+ramdom numbers
+----------------
+its are using an simple games
+-------
+#include<iostream>
+using namespace std;
+void random()
+{
+    int random;
+    for(int i=0; i<10; i++)
+    {
+        random=rand();
+        cout<<random<<endl;
+    }
+}
+
+int main()
+{
+    random();
+    return 0;
+}
+_________________________________________
+#include<iostream>
+using namespace std;
+void random()
+{
+    int random;
+    for(int i=0; i<10; i++)
+    {
+        random=rand()%10;
+        cout<<random<<endl;
+    }
+}
+
+int main()
+{
+    random();
+    return 0;
+}//rand is an keyword
+__________________________________________________
+exception handling
+------------------
+Exception handling in C++ is a mechanism that allows you to handle runtime errors gracefully,
+ preventing the program from crashing and providing a way to recover or clean up resources.
+ It involves using three main constructs: 
+try, 
+catch, and
+throw.
+________________________________________
+key expections
+===============
+Try Block:
+
+Contains code that may throw an exception.
+Syntax:
+cpp
+Copy code
+try {
+    // Code that may throw an exception
+}
+Throw Statement:
+
+Used to signal that an exception has occurred.
+Syntax:
+cpp
+Copy code
+throw exception_object;
+Catch Block:
+
+Handles the exception thrown in the try block.
+Syntax:
+cpp
+Copy code
+catch (exception_type e) {
+    // Handle the exception
+}
+_______________________________________________________________
+syntax
+~~~~~~
+try {
+    // Code that might throw an exception
+    throw some_exception; // Throw an exception
+} catch (exception_type e) {
+    // Handle the exception
+}
+````````````````````````````````````````````````````````````````````````````````
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a=10,b=0,c;
+    try
+    {
+        if(b==0)
+            throw 15;//its an error number
+    c=a/b;
+    cout<<"result : "<<c<<endl;
+    }
+    catch (int e)
+    {
+        cout<<"not diviseded by zero";
+    }
+    return 0;
+}
+__________________________________________________________
+#include<iostream>
+using namespace std;
+int division(int x,int y)
+{
+    if(y==0)
+        throw 1;
+    return x/y;
+}
+int main()
+{
+    int a=10,b=0,c;
+    try
+    {
+        c=division(a,b);
+        cout<<c<<endl;
+        
+    }
+    catch(int e)	catch(...)	// can able to use multi catchs
+    {
+        cout<<"its error";
+    }
+    return 0;
+}
+________________________________________________
+
+write file
+----------
+create file
+-----------
+#include<iostream>
+#include<fstream>
+using namespace std;
+int main()
+{
+    ofstream o("test.txt",ios::app);		/ios::app(app etc)
+    o<<"hello"<<endl;
+    o<<"how are you"<<endl;
+    o.close();
+    return 0;
+}
+
+___________________________________________________
+read file
+---------
+#include<iostream>
+#include<fstream>
+using namespace std;
+int main()
+{
+    string mytext;
+    ifstream myreadfile("test.txt");
+    while(getline(myreadfile,mytext))
+    {
+        cout<<mytext<<endl;
+    }
+    myreadfile.close();
+  return 0;
+}
+__________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

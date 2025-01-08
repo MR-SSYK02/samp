@@ -1,0 +1,73 @@
+css	--cascading style sheets
+__________________________________
+---
+
+CSS is the language we use to style an HTML document.
+
+CSS describes how HTML elements should be displayed.
+
+This tutorial will teach you CSS from basic to advanced.
+
+_________________________________________________________
+pre requisttes
+----------------
+Tags
+ID
+Class
+____________
+all have default styles
+_________________________
+there ha three type
+inline 		in the same line
+internal 	
+external
+____________________
+internal 
+______
+</head>
+<style>
+    h1{
+        color: blue;
+    }
+</style>
+<body>
+    <h1>hello</h1>
+    <h3>hello</h3>
+    <h4>hello</h4>
+    <h5>hello</h5>
+    <h6>hello</h6>
+
+
+</body>
+_____________________________________
+external
+__________
+  <title>css</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>hello</h1>
+    <h3>hello</h3>
+    <h4>hello</h4>
+    <h5>hello</h5>
+    <h6>hello</h6>
+
+
+</body>
+_____________________________________
+selectors
+----------
+Tags
+Class   .
+ID  #
+universal selectors *
+______________________________________________________________
+command
+/*sdjdjdgjkdjdj*/
+_____________________________________
+image
+body{
+    background-image: url(ssyk.png);
+background-repeat: no-repeat;
+}
+_________________________________________________________

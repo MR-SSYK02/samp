@@ -1,0 +1,21 @@
+// syntax
+$(selector).action()
+    $ = short j query function
+    selector= string for get html element
+    action() = method or function-for perform a selected element
+    // id 
+    # selector
+    // class
+    . selector
+    // element
+    'name'
+    //attribue
+    '[]'
+    // value selector
+    '[ value = name]'
+    //partial value selector
+    (a[href* ='name'])
+            *= take more than one value
+            (a['href^= link'])
+            ^= select particular
+            

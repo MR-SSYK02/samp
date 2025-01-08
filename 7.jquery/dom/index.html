@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docm manipulation</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <style>
+        .container{
+            padding: 20px;
+            border:solid #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div id="content"> Old Html</div>
+    <img  id="log" src="logo.png" alt="logo">
+    <div class="container">
+        <button id="mybutton">click me</button>
+    </div>
+    <script>
+        //html()
+        $('#content').html('<p> new html content</p>');
+        //attr()
+        $('#logo').attr('alt', 'new logo');
+        //parent 
+        $("#mybutton").click(function() {
+            var elm= $(this).parent();
+            elm.append(' hi ')
+        }
+    )
+
+    </script>
+    
+</body>
+</html>
