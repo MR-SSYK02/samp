@@ -1,0 +1,108 @@
+MySQL
+_______
+
+>> MySQL is the most popular open source relational database management system.
+>> MySQL used for developing various web based software development.
+>> Developed by company MySQL AB.
+__________________________________________________________________________________
+FEaturres of MySQL
+====================
+>> relational database management (RDBMS)		//connect each others
+>> Easy to use
+>> Storing Data is secure
+>> Open source & Free to downlod
+>> Compatible on many operating systems
+____________________________________________________________________
+data types 
+```````````
+INT
+TINYINT
+SMALLINT
+MEDIUMINT
+BIGINT
+FLOAT(m,d)
+DOUBLE(m,d)
+---------------------------------------
+
+Data Type	Size	Signed Range	Unsigned Range
+TINYINT	1 byte	-128 to 127	0 to 255
+SMALLINT	2 bytes	-32,768 to 32,767	0 to 65,535
+MEDIUMINT	3 bytes	-8,388,608 to 8,388,607	0 to 16,777,215
+INT	4 bytes	-2,147,483,648 to 2,147,483,647	0 to 4,294,967,295
+BIGINT	8 bytes	-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807	0 to 18,446,744,073,709,551,615
+________________________________________________________________________________________________________________________
+STRING type
+------------
+VARCHAR
+TINYTEXT
+TEXT
+MEDIUMTEXT
+LONGTEXT
+BINARY
+VARBINARY
+_______________________________________
+large objects(img etc.../)
+------------------------------
+TINYBLOB
+BLOB(SIZE)
+MEDIUMBLOB
+LONGTEXT
+
+_____________________________________
+
+use wamp server for my sql
+______________________________________
+just enter the command console
+___________________________________________
+
+mysql> create database samp
+    -> drop database sample
+    -> create database samp1
+    -> show database
+    ->
+_______________________________________
+use sample;
+create table user(
+id int,age int,gender varchar(10)
+);
+___________________________________
+use samp1;
+create table user(
+id int,age int,gender varchar(10)
+);
+show tables;
+describe user;
+--------------------------------------------
+rename alter table user rename to student
+----------------------------------------------
+select * from user;
+insert into user values( 1,21,'ram');
+describe user;
+select*from user;
+insert into user (id,gender) values (3,'male');
+select * from user;
++++++++++++++++++++++++++++++++++++++++++++++++++++
+select age,gender from user ;
+select age,gender from user where gender='male' ;
+__________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

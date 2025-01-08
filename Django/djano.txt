@@ -1,0 +1,476 @@
+________
+Django	|
+________|
+______________________________________________________________
+
+# Django is a back-end server side web framework.
+# Django is free, open source and written in Python.
+# Django makes it easier to build web pages using Python.
+# Django takes care of the difficult stuff 
+# so that you can concentrate on building your web applications.
+_______________________________________________________________
+How does Django Work?
+Django follows the MVT design pattern (Model View Template).
+
+Model - The data you want to present, usually data from a database.
+View - A request handler that returns the relevant template and content - based on the request from the user.
+Template - A text file (like an HTML file) containing the layout of the web page, with logic on how to display the data.
+____________________________________________________________________________
+features
+========
+admin sit
+orm(object relational mapping
+authentication
+its have huge community
+______________________________________
+py
+---------------------------
+python ms source installations
+----------------------------------
+create a folder
+===========================
+cheack 
+py --version
+____________________________
+create virchual enviranment
+____________________________
+pip --version
+______________________________
+its not found install it
+________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+virtual environment
+______________________
+its an folder its use to store the installed datas
+if wee delete the folder its not affect the system its 
+different states and new foldders
+
+|___________________________________________________________
+python --version
+python -m venu django-venv
+django-venv/script/avtivate
+django-venv/script/deactivate
+________________________________________________________________
+cd desktop
+________________________________________
+py -m django --version
+_______________________________
+>py -m venv Django-venv
+____________________________________
+its create an folder
+-------------------------------------
+
+C:\Users\USER.DESKTOP-BE7AR60\Desktop>py -m venv Django-venv
+
+C:\Users\USER.DESKTOP-BE7AR60\Desktop>cd Django-venv
+
+C:\Users\USER.DESKTOP-BE7AR60\Desktop\Django-venv>cd scripts
+
+C:\Users\USER.DESKTOP-BE7AR60\Desktop\Django-venv\Scripts>activate
+
+(Django-venv) C:\Users\USER.DESKTOP-BE7AR60\Desktop\Django-venv\Scripts>
+________________________________________________________________________________
+its mean virtual environment can be activated
+___________________________________________________________________
+(Django-venv) C:\Users\USER.DESKTOP-BE7AR60\Desktop\Django-venv\Scripts>cd..
+
+(Django-venv) C:\Users\USER.DESKTOP-BE7AR60\Desktop\Django-venv>py -m django --version
+C:\Users\USER.DESKTOP-BE7AR60\Desktop\Django-venv\Scripts\python.exe: No module named django
+
+(Django-venv) C:\Users\USER.DESKTOP-BE7AR60\Desktop\Django-venv>pip list
+Package Version
+------- -------
+pip     24.3.1
+
+(Django-venv) C:\Users\USER.DESKTOP-BE7AR60\Desktop\Django-venv>
+
+_________________________________________________________________
+installed list
+___________________________________________________
+
+>py -m pip install django
+__________________________________________
+instaling django
+___________________
+
+(Django-venv) C:\Users\USER.DESKTOP-BE7AR60\Desktop\Django-venv>pip list
+Package  Version
+-------- -------
+asgiref  3.8.1
+Django   5.1.4
+pip      24.3.1
+sqlparse 0.5.3
+tzdata   2024.2
+______________________________________________________
+create a py file for implement
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
+____________
+from start
+----------
+open cmd
+Press Win + R, type cmd, and press Enter.
+Alternatively, search for "Command Prompt" in the Start menu, right-click it, and select Run as Administrator.
+______________________
+
+{
+    Microsoft Windows [Version 10.0.19045.5247]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\USER.DESKTOP-BE7AR60>cd dj
+The system cannot find the path specified.
+
+C:\Users\USER.DESKTOP-BE7AR60>cd pj
+The system cannot find the path specified.
+
+C:\Users\USER.DESKTOP-BE7AR60>cd desktop
+
+C:\Users\USER.DESKTOP-BE7AR60\Desktop>cd pj
+
+C:\Users\USER.DESKTOP-BE7AR60\Desktop\pj>cd dj_project
+
+C:\Users\USER.DESKTOP-BE7AR60\Desktop\pj\dj_project>py -m pip install django
+Defaulting to user installation because normal site-packages is not writeable
+Collecting django
+  Using cached Django-5.1.4-py3-none-any.whl.metadata (4.2 kB)
+Collecting asgiref<4,>=3.8.1 (from django)
+  Using cached asgiref-3.8.1-py3-none-any.whl.metadata (9.3 kB)
+Collecting sqlparse>=0.3.1 (from django)
+  Using cached sqlparse-0.5.3-py3-none-any.whl.metadata (3.9 kB)
+Collecting tzdata (from django)
+  Using cached tzdata-2024.2-py2.py3-none-any.whl.metadata (1.4 kB)
+Using cached Django-5.1.4-py3-none-any.whl (8.3 MB)
+Using cached asgiref-3.8.1-py3-none-any.whl (23 kB)
+Using cached sqlparse-0.5.3-py3-none-any.whl (44 kB)
+Using cached tzdata-2024.2-py2.py3-none-any.whl (346 kB)
+Installing collected packages: tzdata, sqlparse, asgiref, django
+  WARNING: The script sqlformat.exe is installed in 'C:\Users\USER.DESKTOP-BE7AR60\AppData\Roaming\Python\Python313\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script django-admin.exe is installed in 'C:\Users\USER.DESKTOP-BE7AR60\AppData\Roaming\Python\Python313\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed asgiref-3.8.1 django-5.1.4 sqlparse-0.5.3 tzdata-2024.2
+
+C:\Users\USER.DESKTOP-BE7AR60\Desktop\pj\dj_project>django --version
+'django' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\USER.DESKTOP-BE7AR60\Desktop\pj\dj_project>django-admin --version
+'django-admin' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\USER.DESKTOP-BE7AR60\Desktop\pj\dj_project>python -m django --version
+Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Manage App Execution Aliases.
+
+C:\Users\USER.DESKTOP-BE7AR60\Desktop\pj\dj_project>py -m django --version
+5.1.4
+
+C:\Users\USER.DESKTOP-BE7AR60\Desktop\pj\dj_project>py -V
+Python 3.13.1
+
+C:\Users\USER.DESKTOP-BE7AR60\Desktop\pj\dj_project>django-admin startproject djproject
+'django-admin' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\USER.DESKTOP-BE7AR60\Desktop\pj\dj_project>django-admin --version
+'django-admin' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\USER.DESKTOP-BE7AR60\Desktop\pj\dj_project>py -m pip install --force-reinstall django
+Defaulting to user installation because normal site-packages is not writeable
+Collecting django
+  Using cached Django-5.1.4-py3-none-any.whl.metadata (4.2 kB)
+Collecting asgiref<4,>=3.8.1 (from django)
+  Using cached asgiref-3.8.1-py3-none-any.whl.metadata (9.3 kB)
+Collecting sqlparse>=0.3.1 (from django)
+  Using cached sqlparse-0.5.3-py3-none-any.whl.metadata (3.9 kB)
+Collecting tzdata (from django)
+  Using cached tzdata-2024.2-py2.py3-none-any.whl.metadata (1.4 kB)
+Using cached Django-5.1.4-py3-none-any.whl (8.3 MB)
+Using cached asgiref-3.8.1-py3-none-any.whl (23 kB)
+Using cached sqlparse-0.5.3-py3-none-any.whl (44 kB)
+Using cached tzdata-2024.2-py2.py3-none-any.whl (346 kB)
+Installing collected packages: tzdata, sqlparse, asgiref, django
+  Attempting uninstall: tzdata
+    Found existing installation: tzdata 2024.2
+    Uninstalling tzdata-2024.2:
+      Successfully uninstalled tzdata-2024.2
+  Attempting uninstall: sqlparse
+    Found existing installation: sqlparse 0.5.3
+    Uninstalling sqlparse-0.5.3:
+      Successfully uninstalled sqlparse-0.5.3
+  WARNING: The script sqlformat.exe is installed in 'C:\Users\USER.DESKTOP-BE7AR60\AppData\Roaming\Python\Python313\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  Attempting uninstall: asgiref
+    Found existing installation: asgiref 3.8.1
+    Uninstalling asgiref-3.8.1:
+      Successfully uninstalled asgiref-3.8.1
+  Attempting uninstall: django
+    Found existing installation: Django 5.1.4
+    Uninstalling Django-5.1.4:
+      Successfully uninstalled Django-5.1.4
+  WARNING: The script django-admin.exe is installed in 'C:\Users\USER.DESKTOP-BE7AR60\AppData\Roaming\Python\Python313\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed asgiref-3.8.1 django-5.1.4 sqlparse-0.5.3 tzdata-2024.2
+
+C:\Users\USER.DESKTOP-BE7AR60\Desktop\pj\dj_project>django-admin --version
+'django-admin' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\USER.DESKTOP-BE7AR60\Desktop\pj\dj_project>cd C:\Users\USER.DESKTOP-BE7AR60\AppData\Roaming\Python\Python313\Scripts
+
+C:\Users\USER.DESKTOP-BE7AR60\AppData\Roaming\Python\Python313\Scripts>dir django-admin.exe
+ Volume in drive C has no label.
+ Volume Serial Number is ACBA-34E1
+
+ Directory of C:\Users\USER.DESKTOP-BE7AR60\AppData\Roaming\Python\Python313\Scripts
+
+20-12-2024  10.26 AM           108,438 django-admin.exe
+               1 File(s)        108,438 bytes
+               0 Dir(s)  53,534,539,776 bytes free
+
+C:\Users\USER.DESKTOP-BE7AR60\AppData\Roaming\Python\Python313\Scripts>dir django-admin.exe
+ Volume in drive C has no label.
+ Volume Serial Number is ACBA-34E1
+
+ Directory of C:\Users\USER.DESKTOP-BE7AR60\AppData\Roaming\Python\Python313\Scripts
+
+20-12-2024  10.26 AM           108,438 django-admin.exe
+               1 File(s)        108,438 bytes
+               0 Dir(s)  53,534,597,120 bytes free
+
+C:\Users\USER.DESKTOP-BE7AR60\AppData\Roaming\Python\Python313\Scripts>
+
+
+}
+
+_______________________________________________________________________________________________________________
+
+
+
+ 
+
+C:\Users\USER.DESKTOP-BE7AR60\Desktop\pj\dj_project\Scripts>pip list
+Package Version
+------- -------
+pip     24.3.1
+
+C:\Users\USER.DESKTOP-BE7AR60\Desktop\pj\dj_project\Scripts>cd..
+
+C:\Users\USER.DESKTOP-BE7AR60\Desktop\pj\dj_project>py -m django --version
+5.1.4
+
+C:\Users\USER.DESKTOP-BE7AR60\Desktop\pj\dj_project>django-admin startproject dpj
+'django-admin' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\USER.DESKTOP-BE7AR60\Desktop\pj\dj_project>  dpj
+after instal all files are set properly
+____________________________
+
+PS C:\Users\USER.DESKTOP-BE7AR60\Desktop\pj> cd dj_project
+PS C:\Users\USER.DESKTOP-BE7AR60\Desktop\pj\dj_project> cd dpj
+PS C:\Users\USER.DESKTOP-BE7AR60\Desktop\pj\dj_project\dpj> py 
+manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+December 20, 2024 - 10:42:58
+Django version 5.1.4, using settings 'dpj.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+_________________________ 
+py manage.py runserver
+__________________________________
+how to create an application on django
+___________________
+there all are run under the manage.py
+________________________________________
+if we want to creat app give 
+
+> py 
+manage.py startapp my_app
+	or
+django-admin startapp sara_foods
+___________________
+how to runthe app 
+________
+we wnat to add the app in settings.py
+add in installed app____
+--------------------
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'my_app',
+]
+________________________________________
+use views .py
+use text
+use like url
+
+
+in url
+from my_app import views
+import and
+path('',views.home)
+_______________________________________
+in views
+from django.http import HttpResponse
+# Create your views here.
+def home(request):
+    msg="<h1> hello </h1>"
+    return HttpResponse(msg)________
+ path('home',views.home),
+______________
+
+
+django can give unique response
+_______________________________
+attach an html file
+
+____________________
+ 'templets',
+in settings 
+impot the os
+import os
+
+        'DIRS': [os.path.join(BASE_DIR,"templets")],
+        'APP_DIRS': True,
+
+
+
+import them in views .py
+from django.shortcuts import render
+from django.http import HttpResponse
+from pathlib import Path
+import os
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+)_______________________________________________________
+from django.shortcuts import render
+from django.http import HttpResponse
+from pathlib import Path
+import os
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+# Create your views here.
+def home(request):
+    result=os.path.join(BASE_DIR,"templets")
+    print(result)
+    return render(request,"index.html")
+__________________________________________________________
+
+
+
+  <h1>welcome {{name}}</h1>  
+{'name': 'yuva'}
+if we give in post method its had safe 
+but in get method itss affected those datas and visible
+
+___________________________________
+def details(request):
+    name=request.GET["name"]
+    age=request.GET["age"]
+    date=request.GET["date"]
+    return render(request,"det.html",{'name':name,'age':age,'date':date})
+__________________
+    your details
+    {% block content %}
+    name {{name}}
+    age {{age}}
+    date {{date}}
+
+    {% endblock %}
+_______________________________________
+
+    name=request.POST["name"]
+    age=request.POST["age"]
+    date=request.POST["date"]
+{%cfrf token%}
+______________________________
+static file
+----------
+its use able for img vdo folders
+and css js files
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+    "/var/www/static/",
+]
+paste under the static path in settings
+______________________________________________________________
+
+<img src="{%static 'img/biryani.png'%}" >
+<img src="{%static 'img/chiken-curry.png'%}" >
+<img src="{%static 'img/dosa.png'%}" >
+
+    {%load static%}
+<link rel="stylesheet" href="{% static 'css/style.css'%}">
+__________________________________________________________________
+boostarap in css
+____________________
+just link that
+_______________________________________
+mvt
+model	connect with data base
+view 	comunicate with other tows
+templet	create html and designs
+url 	request and response
+______________________
+model
+______
+it can use to descriptions
+class register(models.Model):
+    name=models.CharField(max_length=20,default="")
+    age=models.IntegerField(max_length=2,default="")
+    date=models.IntegerField(max_length=10,default="")
+
+create a class and sertthe values
+___________
+admin 
+_______register
+from .models import datas
+
+# Register your models here.
+admin.site.register(datas)
+_____________
+resiter completed
+______________________
+make migration to querrys
+manage.py makemigrations
+manage.py migrate
+instale sqlite
+
+ if request.method=='POST':
+
+
+admin panel
+____________
+create super user
+py manage.py createsuperuser
+
+
+
+
+
+
+
+

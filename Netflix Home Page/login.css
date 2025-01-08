@@ -1,0 +1,263 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+body{
+	/* background: url("images/bg.png"); */
+	
+	font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+	background-repeat: no-repeat;
+
+}
+.container{
+	background: url("images/bg.png");
+	width: 100vw;
+
+}
+
+
+.page{
+	
+	margin-left: 33%;
+	margin-top: 28px;
+	padding-top: 10px;
+	padding-left: 70px;
+	width: 450px;
+	height: 580px;
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 6px;
+	color: white;
+	
+	
+	
+}
+
+
+header .logo svg{
+	fill:#e50914;
+	height: 37px;
+	margin-left: 30px;
+	margin-top: 25px;
+}
+
+
+h1{
+	margin-bottom: 32px;
+}
+.page h3{
+	text-align: center;
+	font-size: 15px;
+	font-weight: 100;
+	margin: 20px 50px 20px -25px;
+	
+}
+
+.page .box,.box1{
+	width: 300px;
+	height: 50px;
+	border-radius: 5px;
+	border: 1px solid #808080;
+	padding: 12px;
+/*	margin-top: 30px;*/
+	background-color: rgba(0, 0, 0, 0.7);
+	color: gray;
+}
+ .page .inbox{
+	width: 300px;
+	height: 50px;	
+/*	display: inline-block;*/
+	background-color: #e50914;
+	border: 1px solid #808080;
+	color: white;
+	padding: 7px 17px;
+	border-radius: 5px;
+}		
+
+.input {
+	position: relative;
+
+}
+
+.input span {
+    position: absolute;
+    left: 12px;
+    top: 15px; 
+    z-index: 3; 
+    color: #aaa; 
+    pointer-events: none; 
+    transition: all 0.15s ease; 
+	
+}
+
+.inbox,.box1{
+	cursor: pointer;
+}
+
+
+input.box1:hover{
+	background-color:#3C3D37;
+	color: white;
+}
+
+
+.inbox:hover{
+	background-color: rgba(195,8,21,1.00);
+}
+.input .box:focus ~ span{
+    top: 2px; 
+    font-size: 0.8rem; 
+}
+
+
+.page a{
+	text-decoration: none;	
+}
+
+
+a{
+	color: white;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+p.link a{
+	color: #0071eb;
+}
+
+.link{
+	color: gray;
+	font-size: 1.0rem;
+}
+
+
+#box{
+	border: 1px solid #FFFFFF;
+	padding: 15px;
+}
+
+
+.cbox{
+/*	appearance:none;*/
+	min-height: 10px;
+    min-width: 10px;
+/*	webkit-appearance: none;*/
+/*
+    moz-appearance: none;
+    ms-appearance: none;
+*/
+/*	display: inline-flex; */
+	animation: animation-14hycbg;
+	animation-duration: auto;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: animation-14hycbg;
+    animation-timeline: auto;
+    animation-range-start: normal;
+    animation-range-end: normal;
+	gap:2px;
+	row-gap:2px;
+	column-gap: 2px;
+	background: transparent;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat: initial;
+    background-attachment: initial;
+    background-origin: initial;
+	background-color: transparent;
+}
+
+
+.footer{
+	background-repeat: no-repeat;
+	background-color: black; 
+	height: 500px;
+	position: relative;
+/*	width: 100%;*/
+	/* margin-bottom: 100px; */
+	width: 100vw;
+	
+}
+
+.footer .text{
+    position: relative;
+    top: 80px;
+    left: 150px;
+    width: 70%;
+    color: #999;
+}
+
+.footer-row{
+	display: flex;
+	justify-content: space-between;
+	padding: 50px;
+/*
+	margin-left: 100px;
+	margin-top: 40px;
+*/
+	margin: 40px;
+}
+
+.footer-col .links{
+	margin-top: 40px;
+}
+
+.footer-col ul li{
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+	color: #999;
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.footer .text a{
+	color: #999;
+}
+
+footer div.select {
+	position: relative;
+    top: 0px;
+    left: 91px;
+    width: 70%;
+}
+
+footer div.select svg{
+	height: 20px;
+	color:#e6e6e6;
+	position: absolute;
+	margin-top: 5px;
+	margin-left: 4px;
+}
+
+footer select{
+	background:transparent;
+	color: rgb(236, 236, 236);
+	padding: 6px 0 6px 20px;
+	border-radius: 3px;
+	
+}
+
+select option{
+	color: black;
+}
+
+
+.back{
+	color: #0071eb;
+}
