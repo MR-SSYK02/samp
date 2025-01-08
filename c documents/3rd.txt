@@ -1,0 +1,294 @@
+void main()
+//void is an function
+// its mean which type of data can be return
+// main is an function name 
+// its given the after an funtion
+#include <stdio.h>
+
+// Function definition with two parameters: a and b
+int add(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    int result;
+	
+    // Calling the function with arguments 5 and 10
+    result = add(5, 10);
+    printf("The sum is: %d\n", result);
+
+    return 0;
+}
+...........................................................................
+pointers
+.........
+&-ambrasand
+ram can allocate memory
+
+#include <stdio.h>
+int main(0
+{
+int a=5;
+printf("%d",&a);
+reurn 0;
+}//it can inticate a memory location
+.....
+
+Pointers in C
+A pointer in C is a variable that stores the memory address of another variable.
+ Pointers are a powerful feature of the C language and are used for dynamic memory allocation,
+ passing arguments to functions by reference, and working with arrays and structures. 
+\
+Pointer Declaration: using the * symbol.
+int *ptr;  // Pointer to an integer
+char *ch;  // Pointer to a character.
+
+Key Points to Remember:
+........................
+//A pointer stores the memory address of a variable.
+//Pointers must be initialized before use.
+//Dereferencing a pointer allows access to the value at the address.
+//Pointer arithmetic allows navigation through memory (useful for arrays).
+//Always free dynamically allocated memory to prevent memory leaks.
+ 
+pointer are use to store a location or address in ram.
+
+sample program
+#include <stdio.h>
+int main(0
+{
+int *a=5;//*represent pointer(int,flot,char)
+printf("%d",&a);
+reurn 0;
+}
+..........................................................................
+
+#include <stdio.h>
+int main(0
+{
+int *a;						we use * for represent values
+int d=5;
+a=&d;
+printf("%d",a);
+printf("%d",*a);//print the value
+reurn 0;
+}
+.............................................................................
+swap in pointer\call by value
+#include<stdio.h>
+Void swap(int x,int y)
+{
+	int temp=x;
+	x=y;
+	y=temp;
+]
+int main()
+{
+int a=6;
+int b=4;
+printf("original %d|%d");
+swap(a,b);
+printf("swap %d|%d);
+return 0;
+}
+we just change the value like shift.
+we don't change the variables.
+
+
+
+............................................................................
+if we want to swap use call by refrence
+means we change the memory locations.
+we show the memory address
+
+#include<stdio.h>
+Void swap(int *x,int*y)
+{
+	int temp=*x;
+	*x=*y;
+	*y=temp;
+}
+int main()
+{
+int a=6;
+int b=4;
+printf("original %d|%d");
+swap(a,b);
+printf("swap %d|%d);
+return 0;
+}
+..............................................................................
+structure
+.........
+its an user define data type.(int,flot,char)
+ data type:member each data type contains
+element: members
+
+	syntax
+	struct name{
+	int; 
+};
+example
+
+#include <stdio.h>
+#include <string.h>
+struct book{
+int no;
+char author[40];
+float price;
+};
+int main()
+{
+//int a;
+//a=5;
+struct book hp;
+hp.no=5;
+hp.price=45.56;
+srtcpy(hp.author,"abc");
+printf("%d",hp.no);
+printf("%f",hp.price);
+printf("%s",hp.author);
+return 0;
+...........................................................................
+
+	union
+its similyar to structure
+but structure can create seperate memory location about value
+but union can create a indiuvl memory location.
+over all large size can alocated.
+
+
+
+example:     
+
+#include <stdio.h>
+#include <string.h>
+union book{
+int no;
+char author[40];
+float price;
+};
+int main()
+{
+union book hp;
+hp.no=5;
+hp.price=45.56;
+srtcpy(hp.author,"abc");
+printf("%d",hp.no);
+printf("%f",hp.price);
+printf("%s",hp.author);
+return 0;
+	it can just store a one value
+ist only store the laste value.
+linking can done in structure.
+............................................................................
+file handling 
+..............
+>its use to store a data permenently.
+> Using file handling, you can read, write, and manage files like text files, binary files, etc.
+   //
+there contain 3 step
+//open file location
+//opening mood(read,write,append.)
+//close file.
+open// fopen()
+identifer(file handling)//name of file
+	
+read functions
+//fgetc();represent char single letter or character
+//fgets();represent str multy character
+.write functions
+fputc();represent char single letter or character
+fputs();represent str multy character
+
+............................................................................
+#include <sstdio.h>
+int main()
+{
+FILE *fp;//point
+char c;
+
+fp=fopen("location",mood"r");
+c=fgetc(fp);
+printf("%c",c);
+}
+...........................................................................
+#include <stdio.h>
+int main()
+{
+FILE *fp;//point
+char c[100];
+
+fp=fopen("location",mood"r");
+fgets(c,5,fp);
+printf("%s",c);
+fclose(fp);//close
+}
+...............................................................................
+write
+.....
+#include <stdio.h>
+int main()
+{
+FILE *fp;//point
+char c[100];
+
+fp=fopen("location",mood"w");
+fputc('c',fp);
+fputs("hello",fp);
+fclose(fp);//close
+}
+......................................................................................
+append
+.......
+#include <stdio.h>
+int main()
+{
+FILE *fp;//point
+char c[100];
+
+fp=fopen("location",mood"a");
+fputc('c',fp);					//use +to two actions
+fputs("hello",fp);
+fclose(fp);//close
+}							//in binary .bnr ab
+.......................................................................................
+
+dynamic memory allocation
+..........................
+give a particular memory
+efficently and dynamicaly
+.........................................................................................
+#include<stdio.h>
+#include <stdlib.h>
+#include<string.h>
+ int main()
+{
+char *name;
+name = malloc(100);
+name = strcpy(name,"hello");
+printf("%s",name);
+...............................................................................
+#include<stdio.h>
+#include <stdlib.h>
+#include<string.h>
+ int main()
+{
+char *name;
+name = malloc(5);
+realloc(name,100);			\\reallocate the memory
+name = strcpy(name,"hello");
+printf("%s",name);
+................................................................................
+#include<stdio.h>
+#include <stdlib.h>
+#include<string.h>			//calloc
+ int main()
+{
+char *name;
+name = calloc(5,1);//no.of element,size of element.
+strcpy(name,"hello");
+printf("%s",name);
+free( name);
+printf("%s",name);
+..................................................................................

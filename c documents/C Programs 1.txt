@@ -1,0 +1,278 @@
+2.Source Code
+
+#include <stdio.h>
+int main()
+{
+	printf("\nHello World");
+	return 0;
+}
+
+Output
+Hello World
+
+____________________
+2. Basic Addition 
+Source Code
+
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+  int number1, number2, sum;
+  printf("Enter two integers: ");
+  scanf("%d %d", &number1, &number2);
+  sum = number1 + number2;
+  printf("%d + %d = %d", number1, number2, sum);
+  return 0;
+}
+To download raw file Click Here
+Output
+Enter two integers: 10 20
+10+20=30
+
+
+_____________________________________
+
+3. Adding Two Numbers in C Programming
+Simple program to add two numbers in c programming.
+
+Source Code
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+  int number1, number2, sum;
+  printf("Enter two integers: ");
+  scanf("%d %d", &number1, &number2);
+  sum = number1 + number2;
+  printf("%d + %d = %d", number1, number2, sum);
+  return 0;
+}
+
+Output
+Enter two integers: 10 20
+10+20=30
+_________________________________
+5. Program to Find the maximum and minimum values to Store in a Datatypes  Source Code
+
+#include<stdio.h>
+#include<limits.h>
+#include<float.h>
+int main()
+{
+  //Integer
+  printf("\nShort int %u Bytes %d To %d",sizeof(short int),SHRT_MIN,SHRT_MAX);
+  printf("\nunsigned short int %u Bytes 0 To %d",sizeof(unsigned short int),USHRT_MAX);
+  printf("\nunsigned int %u Bytes 0 To %u",sizeof(unsigned int),UINT_MAX);
+  printf("\nint %u Bytes %d To %d",sizeof(int),INT_MIN,INT_MAX);
+  printf("\nlong int %u Bytes %ld To %ld",sizeof(long int),LONG_MIN,LONG_MAX);
+  printf("\nunsigned long int %u Bytes 0 To %u",sizeof(unsigned long int),ULONG_MAX);
+  printf("\nlong long int %u Bytes %lld To %lld",sizeof(long long int),LONG_LONG_MIN,LONG_LONG_MAX);
+  printf("\nunsigned long long int %u Bytes 0 To %llu \n\n",sizeof(unsigned long long int),ULONG_LONG_MAX);
+
+  //Character
+  printf("\nCharacter %u Bytes %d To %d",sizeof(char),CHAR_MIN,CHAR_MAX);
+  printf("\nCharacter %u Bytes 0 To %d\n\n",sizeof(unsigned char),UCHAR_MAX);
+
+  //Float
+  printf("\nFloat %u Bytes",sizeof(float));
+  printf("\nDouble %u Bytes",sizeof(double));
+  printf("\nLong Double %u Bytes\n\n",sizeof(long double));
+  return 0;
+}
+
+Output
+Short int 2 Bytes -32768 To 32767
+unsigned short int 2 Bytes 0 To 65535
+unsigned int 4 Bytes 0 To 4294967295
+int 4 Bytes -2147483648 To 2147483647
+long int 4 Bytes -2147483648 To 2147483647
+unsigned long int 4 Bytes 0 To 4294967295
+long long int 8 Bytes -9223372036854775808 To 9223372036854775807
+unsigned long long int 8 Bytes 0 To 18446744073709551615
+
+Character 1 Bytes -128 To 127
+Character 1 Bytes 0 To 255
+
+Float 4 Bytes
+Double 8 Bytes
+Long Double 12 Bytes
+
+__________________________________________
+6.  Variables and Literals in C Programming Source Code
+
+#include<stdio.h>
+int main()
+{
+    int a=10;
+    char b='$';
+    float c=12.5f;
+    long int d=2582l;
+    int aa=0x41;
+    float cc=253e-2f;
+    printf("%d \n %d \n%0.2f",a,b,c);
+    return 0;
+}
+
+Output
+10
+36
+12.50
+__________________________________________
+
+7. Arithmetic Operators in C Programming Source Code
+
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    float x;
+    printf("\nEnter 2 Nos : ");
+    scanf("%d%d",&a,&b);
+    c=a+b;
+    printf("\nTotal : %d",c);
+    c=a-b;
+    printf("\nDifference : %d",c);
+    c=a*b;
+    printf("\nMul : %d",c);
+    x=(float)a/(float)b;
+    printf("\nDiv : %0.2f",x);
+    c=a%b;
+    printf("\nMod : %d",c);
+    return 0;
+}
+To download raw file Click Here
+Output
+Enter 2 Nos : 25 10
+Total : 35
+Difference : 15
+Mul : 250
+Div : 2.50
+Mod : 5
+
+_______________________________________________
+Question-1 :Ramesh’s basic salary is input through the keyboard. 
+His dearness allowance is 40% of basic salary, and house rent allowance is 20% of basic salary. 
+Write a program to calculate his gross salary.
+
+Source Code
+#include<stdio.h>
+int main()
+{
+    float bs,da,hra,gs;
+    printf("\nEnter Your Basic Salary : ");
+    scanf("%f",&bs);
+    da=bs*0.4;
+    hra=bs*0.2;
+    gs=bs+da+hra;
+    printf("\nBasic Salary : %0.2f",bs);
+    printf("\nDA : %0.2f",da);
+    printf("\nHRA : %0.2f",hra);
+    printf("\nGross Salary : %0.2f",gs);
+    return 0;
+}
+
+Output
+
+
+________________________________________
+Assignment Operators in C
+
+ource Code
+//Assignment operator
+ 
+int main()
+{
+    int a=10,b=5;
+    //+=
+    a+=b; //a=a+5
+    printf("A : %d",a); //15
+    a-=10; //a=a-10
+    printf("\nA : %d",a);
+    return 0;
+}
+ 
+
+_________________________________
+Relational Operators in C Source Code
+
+//Relational Operators
+ 
+int main()
+{
+    int a=10,b=5;
+ 
+    printf("Greater Than            : %d",a>b);
+    printf("\nLess Than             : %d",a<b);
+    printf("\nGreater Than or Equal : %d",a>=b);
+    printf("\nLesser  Than or Equal : %d",a<=b);
+    printf("\nEqual                 : %d",a==b);
+ 
+    return 0;
+}
+_______________________________
+Logical Operators in C
+
+C provides three logical operators when we test more than one condition to make decisions. These are: && (meaning logical AND), || (meaning logical OR) and ! (meaning logical NOT).
+
+Source Code
+//Logical Operators
+ 
+int main()
+{
+    int a=32; //>=35 and(&&) <=100
+    printf("\nLogical And : %d",(a>=35 && a<=100));
+    printf("\nLogical Or  : %d",(a>=35 || a<=100));
+    printf("\nLogical Not : %d",!(a>=35));
+ 
+ 
+    return 0;
+}
+______________________________
+Increment and Decrement Operators in C
+
+C has two special unary operators called increment (++) and decrement (--) operators. These operators increment and decrement value of a variable by 1.
+
+Source Code
+//Increment and Decrement Operators
+ 
+int main()
+{
+    int a=1;
+    printf("\nPre Increment  : %d",++a);
+    printf("\nPost Increment : %d",a++);
+    printf("\nA : %d",a);//3
+    printf("\nPre Decrement  : %d",--a);
+    printf("\nPost Decrement  : %d",a--);
+    printf("\nA : %d",a);
+    return 0;
+}
+ 
+__________________________________________
+Bitwise Operators in C
+
+The bitwise operators are the operators used to perform the operations on the data at the bit-level. When we perform the bitwise operations, then it is also known as bit-level programming. It consists of two digits, either 0 or 1. It is mainly used in numerical computations to make the calculations faster.
+
+Source Code
+//Bitwise Operators
+ 
+int main()
+{
+    int a=25,b=45,c;
+    printf("\n Bitwise And : %d",a&b);
+    printf("\n Bitwise Or  : %d",a|b);
+    printf("\n Bitwise Xor : %d",a^b);
+    printf("\n Bitwise Not : %d",~a);
+    a=16;
+    b=a<<2;
+    c=a>>2;
+    printf("\n Left Shift  : %d",b);
+    printf("\n Right Shift : %d",c);
+    return 0;
+}
+
+
+
+
+
+ 

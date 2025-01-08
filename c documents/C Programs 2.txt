@@ -1,0 +1,859 @@
+Source Code
+#include<stdio.h>
+#include<limits.h>
+#include<float.h>
+int main()
+{
+  //Integer
+  printf("\nShort int %u Bytes %d To %d",sizeof(short int),SHRT_MIN,SHRT_MAX);
+  printf("\nunsigned short int %u Bytes 0 To %d",sizeof(unsigned short int),USHRT_MAX);
+  printf("\nunsigned int %u Bytes 0 To %u",sizeof(unsigned int),UINT_MAX);
+  printf("\nint %u Bytes %d To %d",sizeof(int),INT_MIN,INT_MAX);
+  printf("\nlong int %u Bytes %ld To %ld",sizeof(long int),LONG_MIN,LONG_MAX);
+  printf("\nunsigned long int %u Bytes 0 To %u",sizeof(unsigned long int),ULONG_MAX);
+  printf("\nlong long int %u Bytes %lld To %lld",sizeof(long long int),LONG_LONG_MIN,LONG_LONG_MAX);
+  printf("\nunsigned long long int %u Bytes 0 To %llu \n\n",sizeof(unsigned long long int),ULONG_LONG_MAX);
+  //Character
+  printf("\nCharacter %u Bytes %d To %d",sizeof(char),CHAR_MIN,CHAR_MAX);
+  printf("\nCharacter %u Bytes 0 To %d\n\n",sizeof(unsigned char),UCHAR_MAX);
+  //Float
+  printf("\nFloat %u Bytes",sizeof(float));
+  printf("\nDouble %u Bytes",sizeof(double));
+  printf("\nLong Double %u Bytes\n\n",sizeof(long double));
+  return 0;
+}
+
+Output
+Short int 2 Bytes -32768 To 32767
+unsigned short int 2 Bytes 0 To 65535
+unsigned int 4 Bytes 0 To 4294967295
+int 4 Bytes -2147483648 To 2147483647
+long int 4 Bytes -2147483648 To 2147483647
+unsigned long int 4 Bytes 0 To 4294967295
+long long int 8 Bytes -9223372036854775808 To 9223372036854775807
+unsigned long long int 8 Bytes 0 To 18446744073709551615
+
+Character 1 Bytes -128 To 127
+Character 1 Bytes 0 To 255
+
+Float 4 Bytes
+Double 8 Bytes
+Long Double 12 Bytes
+....................................................................................................................................................................................
+
+
+#include<stdio.h>
+int main()
+{
+    int a=10;
+    char b='$';
+    float c=12.5f;
+    long int d=2582l;
+    int aa=0x41;
+    float cc=253e-2f;
+    printf("%d \n %d \n%0.2f",a,b,c);
+    return 0;
+}
+To download raw file Click Here
+Output
+10
+36
+12.50
+....................................................................................................................................................................................
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    float x;
+    printf("\nEnter 2 Nos : ");
+    scanf("%d%d",&a,&b);
+    c=a+b;
+    printf("\nTotal : %d",c);
+    c=a-b;
+    printf("\nDifference : %d",c);
+    c=a*b;
+    printf("\nMul : %d",c);
+    x=(float)a/(float)b;
+    printf("\nDiv : %0.2f",x);
+    c=a%b;
+    printf("\nMod : %d",c);
+    return 0;
+}
+
+Output
+Enter 2 Nos : 25 10
+Total : 35
+Difference : 15
+Mul : 250
+Div : 2.50
+Mod : 5
+Ramesh’s basic salary is input through the keyboard. His dearness allowance is 40% of basic salary, and house rent allowance is 20% of basic salary. Write a program to calculate his gross salary.
+#include<stdio.h>
+int main()
+{
+    float bs,da,hra,gs;
+    printf("\nEnter Your Basic Salary : ");
+    scanf("%f",&bs);
+    da=bs*0.4;
+    hra=bs*0.2;
+    gs=bs+da+hra;
+    printf("\nBasic Salary : %0.2f",bs);
+    printf("\nDA : %0.2f",da);
+    printf("\nHRA : %0.2f",hra);
+    printf("\nGross Salary : %0.2f",gs);
+    return 0;
+}
+To download raw file Click Here
+Output
+....................................................................................................................................................................................
+ASSIGNMENT OPERATOR
+.int main()
+{
+    int a=10,b=5;
+    //+=
+    a+=b; //a=a+5
+    printf("A : %d",a); //15
+    a-=10; //a=a-10
+    printf("\nA : %d",a);
+    return 0;
+}
+.........................................................................................
+
+RELATION OPERATORint main()
+{
+    int a=10,b=5;
+ 
+    printf("Greater Than            : %d",a>b);
+    printf("\nLess Than             : %d",a<b);
+    printf("\nGreater Than or Equal : %d",a>=b);
+    printf("\nLesser  Than or Equal : %d",a<=b);
+    printf("\nEqual                 : %d",a==b);
+ 
+    return 0;
+}
+.........................................................................................
+//Logical Operators
+ 
+int main()
+{
+    int a=32; //>=35 and(&&) <=100
+    printf("\nLogical And : %d",(a>=35 && a<=100));
+    printf("\nLogical Or  : %d",(a>=35 || a<=100));
+    printf("\nLogical Not : %d",!(a>=35));
+ 
+ 
+    return 0;
+}
+ .........................................................................................
+//Increment and Decrement Operators
+ 
+int main()
+{
+    int a=1;
+    printf("\nPre Increment  : %d",++a);
+    printf("\nPost Increment : %d",a++);
+    printf("\nA : %d",a);//3
+    printf("\nPre Decrement  : %d",--a);
+    printf("\nPost Decrement  : %d",a--);
+    printf("\nA : %d",a);
+    return 0;
+}
+.........................................................................................
+//Bitwise Operators
+ 
+int main()
+{
+    int a=25,b=45,c;
+    printf("\n Bitwise And : %d",a&b);
+    printf("\n Bitwise Or  : %d",a|b);
+    printf("\n Bitwise Xor : %d",a^b);
+    printf("\n Bitwise Not : %d",~a);
+    a=16;
+    b=a<<2;
+    c=a>>2;
+    printf("\n Left Shift  : %d",b);
+    printf("\n Right Shift : %d",c);
+    return 0;
+}
+.........................................................................................
+//if statement
+ 
+int main()
+{
+    char name[10];
+    int age;
+    printf("\nEnter Your Name : ");
+    scanf("%s",name);
+    printf("\nEnter The Age : ");
+    scanf("%d",&age);
+    if(age>=18)
+    {
+        printf("\n %s  age is %d Eligible For Vote",name,age);
+    }
+    return 0;
+}
+ .........................................................................................
+//if else statement
+ 
+int main()
+{
+    char name[10];
+    int age;
+    printf("\nEnter Your Name : ");
+    scanf("%s",name);
+    printf("\nEnter The Age : ");
+    scanf("%d",&age);
+    if(age>=18)
+    {
+        printf("\n %s  age is %d Eligible For Vote",name,age);
+    }
+    else
+    {
+        printf("\n %s  age is %d Not Eligible For Vote",name,age);
+    }
+    return 0;
+}
+ .........................................................................................
+//else if statement
+ 
+int main()
+{
+   int a;
+   printf("\nEnter The Value of A : ");
+   scanf("%d",&a);
+   if(a<0)
+   {
+       printf("%d is Negative Value",a);
+   }
+   else if(a==0)
+   {
+       printf("The Given Value is 0");
+   }
+   else if(a>0)
+   {
+       printf("%d is Positive Value",a);
+   }
+    return 0;
+}
+  .........................................................................................
+// Nested if Finding given year is leap year
+ 
+int main()
+{
+    int year;
+    printf("\nEnter The Year : ");
+    scanf("%d",&year);
+    if(year%100==0)
+    {
+        if(year%400==0)
+        {
+            printf("%d is leap Year",year);
+        }
+        else
+        {
+            printf("%d is Not leap Year",year);
+        }
+    }
+    else
+    {
+        if(year%4==0)
+        {
+            printf("%d is leap Year",year);
+        }
+        else
+        {
+            printf("%d is Not leap Year",year);
+        }
+ 
+    }
+    return 0;
+}
+ .........................................................................................
+// Switch Statement
+int main()
+{
+    int ch;
+    printf("\nEnter The Value : ");
+    scanf("%d",&ch);
+    switch(ch)
+    {
+    case 1:
+        printf("\n One");
+        break;
+    case 2:
+        printf("\n Two");
+        break;
+    case 3:
+        printf("\n Three");
+        break;
+    default:
+        printf("\n Invalid No");
+        break;
+    }
+    return 0;
+}
+ .........................................................................................
+// Conditional Operator Statement ?:
+int main()
+{
+    int a,b,c;
+    printf("\nEnter The Value of A &  B : \n");
+    scanf("%d%d",&a,&b);
+    c=a>b?a:b;
+    printf("\nThe Greatest No is %d",c);
+    return 0;
+}/*
+School Result Management
+1.Five Marks input through the keyboard
+2.Find total and average of the given marks.
+3.Find the result whether the given marks must be >=35
+4.Grade as per the following condition.
+    90-100 - A Grade
+    80-89  - B Grade
+    70-79  - C Grade
+    <70    - D Grade
+    Fail   - No Grade
+ 
+*/
+ 
+#include<stdio.h>
+ 
+int main()
+{
+    int m1,m2,m3,m4,m5,total;
+    float avg;
+    printf("\nEnter 5 Marks : \n");
+    scanf("%d%d%d%d%d",&m1,&m2,&m3,&m4,&m5);
+    total=m1+m2+m3+m4+m5;
+    avg=total/5.0;
+    printf("\nTotal   : %d",total);
+    printf("\nAverage : %f",avg);
+    if(m1>=35&&m2>=35&&m3>=35&&m4>=35&&m5>=35)
+    {
+        printf("\nResult  : Pass");
+        if(avg>=90&&avg<=100)
+        {
+            printf("\nGrade   : A Grade");
+        }
+        else if(avg>=80&&avg<=90)
+        {
+            printf("\nGrade   : B Grade");
+        }
+        else if(avg>=70&&avg<=79)
+        {
+            printf("\nGrade   : C Grade");
+        }
+        else
+        {
+            printf("\nGrade   : D Grade");
+        }
+    }
+    else
+    {
+        printf("\nResult  : Fail");
+        printf("\nGrade   : No Grade");
+    }
+    return 0;
+}
+ .........................................................................................
+//goto label
+#include<stdio.h>
+ 
+int main()
+{
+    int i=0;
+    joes:
+    printf("\n%d",i);//0 1 2 3 4
+    i++;//1 2 3 4 5
+    if(i!=5)
+    {
+        goto joes;
+    }
+    printf("\nEnd");
+    return 0;
+}
+  .........................................................................................
+#include<stdio.h>
+ 
+int main()
+{
+    int ch,qty,i,net=0;
+    joes:
+    printf("\n\tMENU CARD");
+    printf("\n\t\t1.COFFEE        Rs:15");
+    printf("\n\t\t2.TEA           Rs:10");
+    printf("\n\t\t3.COLD COFFEE   Rs:25");
+    printf("\n\t\t4.MILK SHAKE    Rs:50");
+    printf("\n\n Enter Your choice  : ");
+    scanf("%d",&ch);
+    switch(ch)
+    {
+    case 1:
+        printf("\nYou have selected Coffee");
+        printf("\nEnter The Qty : ");
+        scanf("%d",&qty);
+        net=net+(qty*15);
+        break;
+     case 2:
+        printf("\nYou have selected Tea");
+        printf("\nEnter The Qty : ");
+        scanf("%d",&qty);
+        net=net+(qty*10);
+        break;
+     case 3:
+        printf("\nYou have selected Cold Coffee");
+        printf("\nEnter The Qty : ");
+        scanf("%d",&qty);
+        net=net+(qty*25);
+        break;
+     case 4:
+        printf("\nYou have selected Milk Shake");
+        printf("\nEnter The Qty : ");
+        scanf("%d",&qty);
+        net=net+(qty*50);
+        break;
+     default:
+          printf("\nInvalid Product Selection");
+          break;
+ 
+    }
+ 
+    printf("\nDo You want to continue press 1: ");
+    scanf("%d",&i);
+    if(i==1)
+    {
+        goto joes;
+    }
+     printf("\nTotal amount : %d",net);
+     printf("\nThank You Come Again");
+    return 0;
+}
+  .........................................................................................
+/*
+    Looping Statement
+ 
+        1.Entry Check Loop
+           * While
+            * For
+        2.Exit Check Loop
+            do while
+ 
+while(condition) (* INITIALISATION
+                   *CONDITION CHECKING)
+                    *INCREMENT OR DECREMENT)
+{
+    ----
+    ----
+    ----
+}
+*/
+#include<stdio.h>
+int main()
+{
+    int i=1,n;
+    printf("\nEnter The Limit : ");
+    scanf("%d",&n);
+    while(i<=n)
+    {
+        printf("\n%d",i);
+        i++;
+    }
+    return 0;
+}
+........................................................................................
+//Do While ( EXIT CHECK LOOP )
+/*
+ 
+do
+{
+    -----
+    -----
+}while(condition);
+ 
+*/
+#include<stdio.h>
+int main()
+{
+    int i=0,n;
+    printf("\nEnter The Limit : ");
+    scanf("%d",&n);
+    do
+    {
+       printf("\n%d",i);
+       i+=2; //i=i+2
+    }while(i<=n);
+    return 0;
+}
+........................................................................................
+ //For Loop
+ 
+#include<stdio.h>
+int main()
+{
+    int i,n;&
+    printf("\nEnter The Limit : ");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)//I+=2 (OD NUMBER)
+    {
+        printf("\n%d",i);
+    }
+    return 0;
+}
+...............................................................................................................  
+// NESTED LOOP -PATTERN PROGRAMS OR 2 DIMENS ARRAY
+#include<stdio.h>
+int main()                                    J
+{                                             0 1 2 3 4   
+    int i,j;                               I  0   **********
+    for(i=0;i<5;i++)                      1   **********
+    {                                      2   ********** 
+        for(j=0;j<5;j++)                   3  **********
+        {                                   4   **********
+            printf("*");
+        }
+        printf("\n");  
+    }
+    printf("\n----------------------------\n");
+ 
+    for(i=1;i<=5;i++)                *
+    {                                 ** 
+        for(j=1;j<=i;j++)              *** 
+        {
+            printf("*");                ****
+        }
+        printf("\n");
+    }
+    return 0;
+}
+................................................................................................................  
+//Break & Continue
+#include<stdio.h>
+int main()
+{                                             {
+    int i,n,num,sum=0;                          int i
+    printf("\nEnter The Limit : ");             for(i=1; i<=n; i++)
+    scanf("%d",&n);                          {
+    for(i=1; i<=n; i++)                            if (i==8)  
+    {                                              
+                                                      break;
+        printf("\nEnter The Number : ");           if (i==5)
+                                                       continue; 
+        scanf("%d",&num); //1 2 3 0 5         printf("\n%d" ,i);   
+        if(num==0)                                  }
+            continue;                              return o; 
+                                                   }
+       sum+=num;                              
+    }
+    printf("\nTotal : %d",sum);
+    return 0;
+}..................................................................................................................................................
+//ASCII  American Standard Code For Information Interchange
+/*
+128 total character which is used mostly during program.
+ 
+Total number of Character in ASCII table is 256 (0 to 255).
+ 
+0 to 31(total 32 character ) is called as ASCII control characters
+include 'Escape', 'Backspace' and 'Delete'.
+ 
+32 to 127 character is called as ASCII printable characters
+ 
+128 to 255 is called as The extended ASCII codes ( converting to binary value) 
+*/
+ 
+#include<stdio.h>
+int main()
+{
+    int i;
+    char a='a';
+    for(i=0;i<=255;i++)
+    {
+       printf("\n%d : %c",i,i);
+    }
+ 
+    printf("%c : %c",a,a-32);
+ 
+    return 0;
+}
+ 
+/*
+    48-57  -> 0-9
+    65-90  -> A-Z
+    97-122 -> a-z
+    32     -> Space
+*/......................................................................................................................................................
+ //Arrays
+#include<stdio.h>
+int main()
+{
+    int i,a[100],n;
+    printf("\nEnter The Limit : ");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        printf("\nEnter The Value : ");
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        printf("\n%d",a[i]);
+ 
+    }
+    return 0; 
+}...............................................................
+//2D Arrays
+#include<stdio.h>
+int main()
+{
+    int a[100][100],b[100][100],c[100][100];
+    int i,j,n,m;
+    printf("\nEnter The Rows : ");
+    scanf("%d",&n);
+    printf("\nEnter The Columns : ");
+    scanf("%d",&m);
+ 
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<m;j++)
+        {
+            printf("Enter The Value of a[%d][%d] : ",i,j);
+            scanf("%d",&a[i][j]);
+        }
+    }
+ 
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<m;j++)
+        {
+            printf("Enter The Value of b[%d][%d] : ",i,j);
+            scanf("%d",&b[i][j]);
+        }
+    }
+ 
+     for(i=0;i<n;i++)
+    {
+        for(j=0;j<m;j++)
+        {
+            c[i][j]=a[i][j]+b[i][j];
+            printf("\t%d",c[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}........................................................................................................................................
+#include<stdio.h>
+#include<string.h>
+ 
+int main()
+{
+    char c[20],a[20];                              char c[20]
+    char x[10]={'R','A','M','\0'};                 printf(" enter the string ;"
+    char y[10]={'K','U','M','A','R','\0'};           scanf("%s ",c); 
+    printf("x : %s",x);                             printf ("%s",c)
+    printf("\nEnter The String : ");              return 0
+    ge ts(c);
+ 
+    printf("\nCompare   : %d ",strcmp(x,c));//String Compare
+    printf("\nLength    : %d ",strlen(c));//String Length
+    printf("\nReverse   : %s ",strrev(c));//String Reverse 
+    printf("\nUppercase : %s ",strupr(c));//String Upper
+    printf("\nLowercase : %s ",strlwr(c));//String Lower
+    printf("\nCopy      : %s ",strcpy(a,c));//String Copy
+    strcat(x,y);
+    printf("\nConcatenation : %s ",x);//String Concatenation
+    return 0;
+}
+ 
+ 
+/*
+char c[10];
+printf("Enter The String : ");
+//scanf("%s",c);
+gets(c);
+printf("%s",c);
+*/
+ ........................................................................................................................................................ 
+ //Math Function
+#include<stdio.h>
+#include<math.h>
+ 
+int main()
+{
+ 
+    printf("\nSQRT  : %0.2f",sqrt(4));
+    printf("\nPOW   : %0.2f",pow(2,3));
+    printf("\nabs   : %d",abs(-25));
+    printf("\nCEIL  : %f",ceil(3.8));
+    printf("\nCEIL  : %f",ceil(3.2));
+    printf("\nFLOOR : %f",floor(3.8));
+    printf("\nFLOOR : %f",floor(3.2));
+    printf("\nROUND : %f",round(3.8));
+    printf("\nROUND : %f",round(3.2));
+    return 0;
+}...........................................................................................................................
+There are three aspects of a C function.
+
+Function declaration : A function must be declared globally in a c program to tell the compiler about the function name, function parameters, and return type.
+
+Function call : Function can be called from anywhere in the program. The parameter list must not differ in function calling and function declaration. We must pass the same number of functions as it is declared in the function declaration.
+
+Function definition : It contains the actual statements which are to be executed. It is the most important aspect to which the control comes when the function is called. Here, we must notice that only one value can be returned from the function.
+
+Types of function
+There are two types of functions in C programming
+
+Library Functions : Are the functions which are declared in the C header files such as scanf(), printf(), gets(), puts(), ceil(), floor() etc.
+
+User-defined functions : Are the functions which are created by the C programmer, so that he/she can use it many times. It reduces the complexity of a big program and optimizes the code.
+
+Return Type
+
+Non-Return Type
+
+Different aspects of function calling
+function without arguments and without return value
+
+function without arguments and with return value
+
+function with arguments and without return value
+
+function with arguments and with return value
+
+........................................................................................
+//No Return Without Argument Function in C
+/*
+    1.Function Declaration
+    2.Function Definition
+    3.Function Calling
+ 
+*/
+#include<stdio.h>
+ 
+//Function Declaration
+void add();
+ 
+int main()
+{
+    //Function Calling
+    add();
+    return 0;
+}
+//Function Definition
+void add()
+{
+    int a,b,c;
+    printf("\nEnter The Value of A & B :");
+    scanf("%d%d",&a,&b);
+    c=a+b;
+    printf("\nTotal : %d",c);
+}.....................................................................................................................
+//No Return With Argument Function in C
+#include<stdio.h>
+ 
+//Function Declaration
+void add(int,int);
+ 
+int main()
+{
+    int a,b;
+    printf("\nEnter The Value of A & B : ")l
+    scanf("%d%d",&a,&b);
+    //Function Calling
+    add(a,b);  // Actual Parameters
+    return 0;
+}
+//Function Definition
+void add(int x,int y)  //Formal Parameters
+{
+    int c;
+    c=x+y;
+    printf("\nTotal : %d",c);
+}..........................................................................................................
+//Return With Argument Function in C
+#include<stdio.h>
+int add(int,int);
+int main()
+{
+    int a,b;
+    printf("\nEnter The Value of A & B : ");
+    scanf("%d%d",&a,&b);
+    a=add(a,b);
+    printf("\nTotal : %d",a);
+    return 0;
+}
+ 
+int add(int x,int y)
+{
+    return x+y;
+}
+ .................................................................................................................
+//Return Without Argument Function in C
+#include<stdio.h>
+ 
+int add();
+ 
+int main()
+{
+    int a;
+    a=add();
+    printf("\nTotal : %d",a);
+    return 0;
+}
+ 
+int add()
+{
+    int a,b;
+    printf("\nEnter The Value of A & B : ");
+    scanf("%d%d",&a,&b);
+    return a+b;
+}
+ .....................................................................................................................
+//Recursion Function in C Programming
+#include<stdio.h>
+/*
+    5!
+    1*2*3*4*5
+*/
+ 
+int factorial(int i) //5
+{
+    if(i<=1){
+        return 1;
+    }
+    return i*factorial(i-1);  //5*4*3*2*1
+}
+ 
+int main()
+{
+    printf("Factorial : %d",factorial(5));
+    return 0;
+}
+.......................................................................................................
+
+//Call by Reference Function in C Programming
+ 
+#include<stdio.h>
+ 
+void swap(int *x,int *y)( DUPLICATE VARIABLES
+
+{
+   int temp;
+   temp=*x;
+   *x=*y;
+   *y=temp;
+}
+ 
+int main()
+{
+    int a,b;
+    printf("\nEnter The Value of A & B : ");
+    scanf("%d%d",&a,&b);
+    printf("\nBefore Swap  A : %d   | B : %d",a,b);
+    swap(&a,&b);
+    printf("\nAfter  Swap  A : %d   | B : %d",a,b);
+    return 0;
+}
+ ...................................................................................................
+ 
+ 
+ 

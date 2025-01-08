@@ -1,0 +1,101 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.nav-link {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+.nav-link:hover {
+    color: #ff6347;
+}
+
+/* Hero Section */
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+.hero-section h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+.hero-section p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* About Section */
+#about {
+    background-color: #fff;
+    text-align: center;
+}
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+#about p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Portfolio Section */
+#portfolio .card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+#portfolio .card:hover {
+    transform: scale(1.05);
+}
+#portfolio .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+#portfolio .card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #f8f9fa;
+    text-align: center;
+}
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+#contact form .form-control {
+    border-radius: 0;
+}
+#contact form .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+#contact form .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 1rem 0;
+}
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
